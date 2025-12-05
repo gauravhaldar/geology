@@ -1,0 +1,62 @@
+export default function Hero() {
+  return (
+    <section className="relative overflow-hidden bg-[#0b1412] pb-20 pt-16 text-slate-100">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(200,161,77,0.22),_transparent_55%),_radial-gradient(circle_at_bottom,_rgba(29,60,52,0.9),_#050908)] opacity-90" />
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 md:flex-row md:items-center md:gap-14">
+        <div className="max-w-xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C8A14D]">
+            70 Years of Geological Excellence
+          </p>
+          <h1 className="mt-4 text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl lg:text-5xl">
+            Building Earth Scientists for the World.
+          </h1>
+          <p className="mt-5 text-sm leading-relaxed text-slate-200">
+            Established nearly 70 years ago by Prof. Dr. S. S. Mayer, the Geology Department of
+            The Maharaja Sayajirao University of Baroda stands as one of India&apos;s most prominent
+            centres for geological education and research. With 23 specialised subjects, extensive
+            field-based learning, and more than 125 PhDs, our alumni today contribute across global
+            industries, national research organisations, and sustainable development sectors.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3 text-xs">
+            <span className="rounded-full border border-emerald-500/50 bg-emerald-900/30 px-3 py-1 text-emerald-100">
+              Field-based learning culture
+            </span>
+            <span className="rounded-full border border-[#C8A14D]/40 bg-[#3b2f16]/60 px-3 py-1 text-[#F5E7C4]">
+              Strong alumni network
+            </span>
+          </div>
+        </div>
+
+        <div className="relative flex-1">
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="rounded-2xl border border-white/10 bg-[#111917]/80 p-4 shadow-lg shadow-black/40">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#C8A14D]">
+                Academic Depth
+              </p>
+              <p className="mt-3 text-3xl font-semibold text-slate-50">23</p>
+              <p className="text-xs text-slate-300">Specialised subjects spanning pure & applied geology.</p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-[#111917]/80 p-4 shadow-lg shadow-black/40">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#C8A14D]">
+                Research Legacy
+              </p>
+              <p className="mt-3 text-3xl font-semibold text-slate-50">125+</p>
+              <p className="text-xs text-slate-300">Doctoral degrees completed under the department.</p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#1D3C34] to-[#111917] p-4 shadow-lg shadow-black/40 sm:col-span-2">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#F1E0B3]">
+                Where Our Alumni Are Today
+              </p>
+              <p className="mt-2 text-xs text-[#F8ECD0]">
+                Alumni are placed across more than <span className="font-semibold">10 countries</span> in
+                resource exploration companies, government organisations, research institutes and
+                universities.
+              </p>
+              <div className="mt-4 h-28 rounded-xl border border-emerald-500/25 bg-[radial-gradient(circle_at_center,_rgba(16,185,129,0.18),_transparent_60%)] bg-[url('/hero.jpg')] bg-contain bg-right bg-no-repeat" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
