@@ -30,6 +30,19 @@ const degreePrograms = [
     ],
   },
   {
+    id: "msc-applied",
+    label: "M.Sc. Applied",
+    level: "Postgraduate",
+    duration: "2 years (4 semesters)",
+    overview:
+      "Professionally oriented postgraduate program focusing on applied aspects of geology such as mineral and petroleum exploration, groundwater, engineering geology and environmental management.",
+    highlights: [
+      "Training in exploration methods, core logging and geotechnical investigations",
+      "Application of remote sensing, GIS and numerical methods to applied problems",
+      "Industry-linked projects, internships and dissertation work in applied domains",
+    ],
+  },
+  {
     id: "phd",
     label: "Ph.D. in Geology",
     level: "Doctoral",
@@ -255,7 +268,7 @@ export default function ProgramsPage() {
         </section>
 
         {/* Info band */}
-        <section className="mt-14 rounded-2xl border border-white/10 bg-white/5 p-5 text-[11px] shadow-xl shadow-black/40 sm:flex sm:items-center sm:justify-between sm:gap-6">
+        {/* <section className="mt-14 rounded-2xl border border-white/10 bg-white/5 p-5 text-[11px] shadow-xl shadow-black/40 sm:flex sm:items-center sm:justify-between sm:gap-6">
           <div className="max-w-xl">
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C8A14D]">
               Next steps
@@ -277,7 +290,7 @@ export default function ProgramsPage() {
               How to Apply
             </button>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );

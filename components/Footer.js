@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-[#0e1715] text-slate-100 border-t border-white/10">
@@ -7,12 +9,17 @@ export default function Footer() {
           
           {/* Left Column - Logo */}
           <div className="flex flex-col items-center md:items-start">
-            <div className="mb-4">
-              <h3 className="text-lg font-bold text-center md:text-left">
-                Geology<br/>Website
-              </h3>
-              {/* <p className="text-sm text-gray-300 mt-2">सत्यं शिवं सुन्दरम्</p> */}
-              {/* <p className="text-xs text-gray-400 mt-1">Estd. 1949</p> */}
+            <div className="mb-4 flex items-center justify-center md:justify-start">
+              <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-[#1D3C34] shadow-lg shadow-black/40 md:h-24 md:w-24">
+                <Image
+                  src="/logo.png"
+                  alt="Geology Alumni and Geo Sphere logo"
+                  width={120}
+                  height={120}
+                  className="h-20 w-20 object-contain md:h-24 md:w-24"
+                  priority
+                />
+              </div>
             </div>
           </div>
 

@@ -231,7 +231,7 @@ export default function AlumniPage() {
         </section>
 
         {/* Call-to-action band */}
-        <section className="mt-14 rounded-2xl border border-white/10 bg-gradient-to-r from-[#1D3C34] via-[#121b19] to-[#444A53] p-6 text-xs shadow-xl shadow-black/50 sm:flex sm:items-center sm:justify-between sm:gap-6">
+        {/* <section className="mt-14 rounded-2xl border border-white/10 bg-gradient-to-r from-[#1D3C34] via-[#121b19] to-[#444A53] p-6 text-xs shadow-xl shadow-black/50 sm:flex sm:items-center sm:justify-between sm:gap-6">
           <div className="max-w-xl">
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#F1E0B3]">
               Stay connected
@@ -252,7 +252,7 @@ export default function AlumniPage() {
               Become a Mentor
             </button>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );
