@@ -44,9 +44,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3">Useful Links</h4>
             <ul className="text-sm text-gray-300 space-y-2">
-              <li><a href="/geology-digital" className="hover:text-white transition-colors">Geology Digital</a></li>
-              <li><a href="/geology-news" className="hover:text-white transition-colors">Geology in News</a></li>
-              <li><a href="/geology-connect" className="hover:text-white transition-colors">Geology Connect</a></li>
+              <li><a href="/geology-digital" className="hover:text-white transition-colors">MSUB Digital</a></li>
+              <li><a href="/geology-news" className="hover:text-white transition-colors">MSUB in News</a></li>
+              <li><a href="/geology-connect" className="hover:text-white transition-colors">MSUB Connect</a></li>
             </ul>
           </div>
 
@@ -71,8 +71,8 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap items-center space-x-4 text-xs text-slate-400">
               {/* <a href="#" className="hover:text-[#C8A14D] transition-colors">Geology Webmail</a> */}
-              <a href="#" className="hover:text-[#C8A14D] transition-colors">Academic Calendar</a>
-              <a href="#" className="hover:text-[#C8A14D] transition-colors">Useful Links</a>
+              {/* <a href="#" className="hover:text-[#C8A14D] transition-colors">Academic Calendar</a> */}
+              {/* <a href="#" className="hover:text-[#C8A14D] transition-colors">Useful Links</a> */}
               {/* <a href="#" className="hover:text-[#C8A14D] transition-colors">Site Map</a> */}
               <a href="/be-member" className="hover:text-[#C8A14D] transition-colors">Contact Us</a>
               <div className="w-4 h-4 bg-[#1D3C34] rounded"></div>

@@ -11,13 +11,13 @@ export default function Navbar() {
     <header className="sticky top-0 z-30 border-b border-white/10 bg-[#0e1715]/90 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 text-sm text-slate-100">
         <Link href="/" className="flex items-center gap-3 cursor-pointer">
-          <div className="flex h-21 w-21 items-center justify-center overflow-hidden rounded-full bg-[#1D3C34] shadow-lg shadow-black/40">
+          <div className="flex h-[75px] w-[75px] items-center justify-center overflow-hidden rounded-full bg-[#1D3C34] shadow-lg shadow-black/40">
             <Image
               src="/logo.png"
               alt="Geology Alumni and Geo Sphere logo"
               width={75}
               height={75}
-              className="h-30 w-30 object-contain"
+              className="h-full w-full object-cover"
               priority
             />
           </div>
