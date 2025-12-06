@@ -11,8 +11,8 @@ export default function Footer() {
               <h3 className="text-lg font-bold text-center md:text-left">
                 Geology<br/>Website
               </h3>
-              <p className="text-sm text-gray-300 mt-2">सत्यं शिवं सुन्दरम्</p>
-              <p className="text-xs text-gray-400 mt-1">Estd. 1949</p>
+              {/* <p className="text-sm text-gray-300 mt-2">सत्यं शिवं सुन्दरम्</p> */}
+              {/* <p className="text-xs text-gray-400 mt-1">Estd. 1949</p> */}
             </div>
           </div>
 
@@ -20,10 +20,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3">Head Office Address</h4>
             <div className="text-sm text-gray-300 space-y-1">
-              <p>lorem ipsum <br/>lorem ipsum</p>
+              <p>The M. S. University of Baroda,<br/> Pratapgunj,<br/>
+               Vadodara, Gujarat-390002</p>
               <p>+91-265-2795555</p>
-              <p>info@geology.ac.in</p>
-              <p>www.geology.ac.in</p>
+              <p>info@msubaroda.ac.in</p>
+              <p>www.msubaroda.ac.in</p>
               {/* <div className="flex space-x-2 mt-3">
                 {[1,2,3,4,5].map((i) => (
                   <div key={i} className="w-6 h-6 bg-gray-600 rounded"></div>
@@ -59,14 +60,14 @@ export default function Footer() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs text-slate-400 mb-2 md:mb-0">
-              Copyright 2023 Geology. All Rights Reserved
+              Copyright 2025 Geology Alumni & Geo Sphere. All Rights Reserved, Designed by Haldar AI & IT
             </p>
             <div className="flex flex-wrap items-center space-x-4 text-xs text-slate-400">
-              <a href="#" className="hover:text-[#C8A14D] transition-colors">Geology Webmail</a>
+              {/* <a href="#" className="hover:text-[#C8A14D] transition-colors">Geology Webmail</a> */}
               <a href="#" className="hover:text-[#C8A14D] transition-colors">Academic Calendar</a>
               <a href="#" className="hover:text-[#C8A14D] transition-colors">Useful Links</a>
-              <a href="#" className="hover:text-[#C8A14D] transition-colors">Site Map</a>
-              <a href="#" className="hover:text-[#C8A14D] transition-colors">Contact Us</a>
+              {/* <a href="#" className="hover:text-[#C8A14D] transition-colors">Site Map</a> */}
+              <a href="/be-member" className="hover:text-[#C8A14D] transition-colors">Contact Us</a>
               <div className="w-4 h-4 bg-[#1D3C34] rounded"></div>
             </div>
           </div>

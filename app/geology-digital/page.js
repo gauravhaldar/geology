@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 export default function GeologyDigital() {
   return (
     <div className="min-h-screen bg-[#0b1412] text-slate-100">
-      <Navbar />
+      {/* <Navbar /> */}
       
       <main className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
@@ -107,7 +107,7 @@ export default function GeologyDigital() {
         </div>
       </main>
       
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
