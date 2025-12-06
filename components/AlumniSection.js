@@ -76,18 +76,28 @@ export default function AlumniSection() {
               ))}
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-[#09100f] p-4 text-xs">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C8A14D]">
-                Alumni Distribution Map
-              </p>
-              <p className="mt-2 text-slate-200">
-                Embed a world map visual here (for example using a mapping library or a static
-                illustration) to showcase alumni presence across countries.
-              </p>
-              <div className="mt-3 h-32 rounded-xl border border-emerald-500/25 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.18),transparent_60%)]" />
-              <p className="mt-2 text-[11px] text-slate-400">
-                *Placeholder illustration – replace with interactive or static map.
-              </p>
+            <div className="grid gap-4 text-xs sm:grid-cols-3">
+              {[
+                { src: "alumini/alumini1.jpg", label: "Alumni field work" },
+                { src: "alumini/alumini2.jpeg", label: "Alumni meet" },
+                { src: "alumini/alumini3.jpeg", label: "Global alumni" },
+              ].map((item) => (
+                <div
+                  key={item.src}
+                  className="overflow-hidden rounded-xl border border-white/10 bg-black/40 shadow-md shadow-black/40"
+                >
+                  <div className="h-28 w-full bg-black">
+                    <img
+                      src={item.src}
+                      alt={item.label}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <p className="px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-200">
+                    {item.label}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

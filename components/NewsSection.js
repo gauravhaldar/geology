@@ -4,11 +4,13 @@ export default function NewsSection() {
       title: "Annual Geological Field Camp",
       date: "February 2025",
       detail: "Students completed a 10-day mapping camp focusing on structural geology and sedimentary logging.",
+      image: "/news/1.jpg",
     },
     {
       title: "Alumni Meet & Panel Discussion",
       date: "December 2024",
       detail: "Alumni from industry, academia and government shared career journeys and mentored current batches.",
+      image: "/news/2.jpeg",
     },
   ];
 
@@ -33,13 +35,24 @@ export default function NewsSection() {
             {items.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl border border-white/10 bg-[#101b18] p-4 shadow-md shadow-black/40"
+                className="overflow-hidden rounded-2xl border border-white/10 bg-[#101b18] shadow-md shadow-black/40"
               >
-                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C8A14D]">
-                  {item.date}
-                </p>
-                <p className="mt-2 text-sm font-semibold text-slate-50">{item.title}</p>
-                <p className="mt-1 text-slate-200">{item.detail}</p>
+                {item.image && (
+                  <div className="h-32 w-full overflow-hidden border-b border-white/10 bg-black/40">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                )}
+                <div className="p-4">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C8A14D]">
+                    {item.date}
+                  </p>
+                  <p className="mt-2 text-sm font-semibold text-slate-50">{item.title}</p>
+                  <p className="mt-1 text-slate-200">{item.detail}</p>
+                </div>
               </div>
             ))}
           </div>

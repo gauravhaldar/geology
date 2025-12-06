@@ -1,9 +1,9 @@
 export default function GallerySection() {
   const items = [
-    "Field camps in the Himalaya",
-    "Coastal geomorphology excursions",
-    "Thin-section petrography lab",
-    "Basin analysis workshop",
+    { label: "Field camps in the Himalaya", src: "/gallery/1.jpeg" },
+    { label: "Coastal geomorphology excursions", src: "/gallery/2.jpeg" },
+    { label: "Thin-section petrography lab", src: "/gallery/3.jpeg" },
+    { label: "Basin analysis workshop", src: "/gallery/4.jpeg" },
   ];
 
   return (
@@ -21,17 +21,32 @@ export default function GallerySection() {
               Curate albums from archives, field notebooks, laboratory sessions and alumni meets to
               visually narrate the story of the department.
             </p>
+            <h2 className="text-xs font-semibold uppercase tracking-[0.28em] text-[#C8A14D]">
+              Vibrant Startup and Technology Summit Gallery
+            </h2>
+            <p className="mt-3 text-2xl font-semibold text-slate-50">
+              70 years of photographs and field memories.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-slate-200">
+              The Dynamic and Mobile Advt innovation won an award at Vibrant Startup and Technology Summit 2019
+            </p>
           </div>
 
           <div className="grid w-full gap-3 sm:grid-cols-2 md:max-w-xl">
-            {items.map((label) => (
+            {items.map((item) => (
               <div
-                key={label}
-                className="flex h-32 flex-col justify-between rounded-xl border border-white/10 bg-[radial-gradient(circle_at_center,rgba(213,199,161,0.12),transparent_65%)] bg-[#101915] p-3 text-xs shadow-md shadow-black/40"
+                key={item.label}
+                className="flex flex-col justify-between rounded-xl border border-white/10 bg-[#101915] p-3 text-xs shadow-md shadow-black/40"
               >
-                <div className="h-16 rounded-lg border border-white/15 bg-black/30" />
+                <div className="aspect-square w-full overflow-hidden rounded-lg border border-white/15 bg-black/30">
+                  <img
+                    src={item.src}
+                    alt={item.label}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
                 <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#F5E7C4]">
-                  {label}
+                  {item.label}
                 </p>
               </div>
             ))}

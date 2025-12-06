@@ -64,16 +64,17 @@ export default function AboutSection() {
             </p>
             <p className="mt-3 text-xs text-[#F8ECD0]">
               A short film introducing our field camps, laboratories, classrooms and alumni
-              stories. Embed your official department video in this space.
+              stories.
             </p>
             <div className="mt-4 w-full overflow-hidden rounded-xl border border-white/15 bg-black/40">
-              <div className="flex h-44 items-center justify-center text-xs text-slate-300 sm:h-80">
-                Video placeholder – YouTube / official video embed here.
-              </div>
+              <video
+                src="/video.mp4"
+                controls
+                className="h-44 w-full bg-black object-cover sm:h-100"
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
-            <p className="mt-3 text-[11px] text-slate-200">
-              *Replace this placeholder with your actual video iframe link when available.
-            </p>
           </div>
         </div>
       </div>

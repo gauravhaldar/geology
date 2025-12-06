@@ -4,11 +4,13 @@ export default function ContactFacultySection() {
       name: "Prof. (Dr.) Example Name",
       role: "Head, Department of Geology",
       speciality: "Sedimentology & Basin Analysis",
+      image: "/faculty/1.jpeg",
     },
     {
       name: "Dr. Sample Faculty",
       role: "Associate Professor",
       speciality: "Structural Geology & Tectonics",
+      image: "/faculty/2.jpg",
     },
   ];
 
@@ -32,11 +34,22 @@ export default function ContactFacultySection() {
               {faculty.map((f) => (
                 <div
                   key={f.name}
-                  className="rounded-2xl border border-white/10 bg-[#101b18] p-3 shadow-md shadow-black/40"
+                  className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-white/10 bg-[#101b18] shadow-md shadow-black/40"
                 >
-                  <p className="text-sm font-semibold text-slate-50">{f.name}</p>
-                  <p className="text-[11px] text-slate-300">{f.role}</p>
-                  <p className="mt-1 text-slate-100">{f.speciality}</p>
+                  {f.image && (
+                    <div className="flex justify-center border-b border-white/10 bg-black/40">
+                      <img
+                        src={f.image}
+                        alt={f.name}
+                        className="h-24 w-24 object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="p-3">
+                    <p className="text-sm font-semibold text-slate-50">{f.name}</p>
+                    <p className="text-[11px] text-slate-300">{f.role}</p>
+                    <p className="mt-1 text-slate-100">{f.speciality}</p>
+                  </div>
                 </div>
               ))}
             </div>

@@ -52,7 +52,7 @@ export default function Hero() {
                 resource exploration companies, government organisations, research institutes and
                 universities.
               </p>
-              <div className="mt-4 h-28 rounded-xl border border-emerald-500/25 bg-[radial-gradient(circle_at_center,_rgba(16,185,129,0.18),_transparent_60%)] bg-[url('/hero.jpg')] bg-contain bg-right bg-no-repeat" />
+              <div className="mt-4 h-28 rounded-xl border border-emerald-500/25 bg-[url('/hero.jpg')] bg-cover bg-center" />
             </div>
           </div>
         </div>
