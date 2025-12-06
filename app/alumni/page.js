@@ -118,13 +118,15 @@ export default function AlumniPage() {
           {/* Main slider */}
           <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#1D3C34] via-[#121b19] to-[#444A53] p-5 shadow-xl shadow-black/50">
             <div className="relative overflow-hidden rounded-xl border border-white/15 bg-black/40">
-              <Image
-                src={activeSlide.image}
-                alt={activeSlide.name}
-                width={900}
-                height={600}
-                className="h-64 w-full object-cover sm:h-80"
-              />
+              <div className="relative w-full aspect-video">
+                <Image
+                  src={activeSlide.image}
+                  alt={activeSlide.name}
+                  width={900}
+                  height={600}
+                  className="h-full w-full object-cover"
+                />
+              </div>
 
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 

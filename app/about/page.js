@@ -959,43 +959,69 @@ export default function AboutPage() {
             )}
 
             {activeSection.id === "important-visitors" && (
-              <div className="mt-6 overflow-x-auto text-xs">
-                <table className="w-full min-w-[600px] border-collapse text-left">
-                  <thead>
-                    <tr className="border-b border-white/20 text-[10px] uppercase tracking-[0.18em] text-[#C8A14D]">
-                      <th className="py-2 pr-3">Sr. No.</th>
-                      <th className="py-2 pr-3">Name of Visitor</th>
-                      <th className="py-2 pr-3">Designation / Area</th>
-                      <th className="py-2 pr-3">Purpose of Visit</th>
-                      <th className="py-2 pr-3">Date of Visit</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-[11px]">
-                    {importantVisitors.map((visitor) => (
-                      <tr
-                        key={visitor.srNo}
-                        className="border-b border-white/10 last:border-0 hover:bg-white/5"
-                      >
-                        <td className="py-2 pr-3 align-middle text-slate-100">
-                          {visitor.srNo}
-                        </td>
-                        <td className="py-2 pr-3 align-middle font-semibold text-slate-50">
-                          {visitor.name}
-                        </td>
-                        <td className="py-2 pr-3 align-middle text-slate-200">
-                          {visitor.designation}
-                        </td>
-                        <td className="py-2 pr-3 align-middle text-slate-200">
-                          {visitor.purpose}
-                        </td>
-                        <td className="py-2 pr-3 align-middle text-slate-200">
-                          {visitor.date}
-                        </td>
+              <>
+                {/* Mobile: stacked cards */}
+                <div className="mt-6 space-y-3 text-xs md:hidden">
+                  {importantVisitors.map((visitor) => (
+                    <div
+                      key={visitor.srNo}
+                      className="rounded-xl border border-white/10 bg-black/30 p-3"
+                    >
+                      <div className="flex items-baseline justify-between gap-3">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#C8A14D]">
+                          #{visitor.srNo}
+                        </p>
+                        <p className="text-[10px] text-slate-300">{visitor.date}</p>
+                      </div>
+                      <p className="mt-1 text-sm font-semibold text-slate-50">
+                        {visitor.name}
+                      </p>
+                      <p className="mt-1 text-[11px] text-slate-200">
+                        {visitor.designation}
+                      </p>
+                      <p className="mt-2 text-[11px] leading-relaxed text-slate-300">
+                        {visitor.purpose}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Desktop: original table */}
+                <div className="mt-6 hidden overflow-x-auto text-xs md:block">
+                  <table className="w-full min-w-[600px] border-collapse text-left">
+                    <thead>
+                      <tr className="border-b border-white/20 text-[10px] uppercase tracking-[0.18em] text-[#C8A14D]">
+                        <th className="py-2 pr-3 font-semibold">Sr. No.</th>
+                        <th className="py-2 pr-3 font-semibold">Name</th>
+                        <th className="py-2 pr-3 font-semibold">Designation</th>
+                        <th className="py-2 pr-3 font-semibold">Purpose</th>
+                        <th className="py-2 pr-3 font-semibold">Date</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                    </thead>
+                    <tbody>
+                      {importantVisitors.map((visitor) => (
+                        <tr key={visitor.srNo} className="border-b border-white/10 last:border-0">
+                          <td className="py-2 pr-3 align-top text-slate-300">
+                            {visitor.srNo}
+                          </td>
+                          <td className="py-2 pr-3 align-top font-semibold text-slate-50">
+                            {visitor.name}
+                          </td>
+                          <td className="py-2 pr-3 align-top text-slate-200">
+                            {visitor.designation}
+                          </td>
+                          <td className="py-2 pr-3 align-top text-slate-200">
+                            {visitor.purpose}
+                          </td>
+                          <td className="py-2 pr-3 align-middle text-slate-200">
+                            {visitor.date}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </>
             )}
 
             {activeSection.id === "milestones" && (
