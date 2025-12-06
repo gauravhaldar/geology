@@ -1,5 +1,7 @@
 import { Merriweather, Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const headingFont = Merriweather({
   variable: "--font-heading",
@@ -24,7 +26,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${headingFont.variable} ${bodyFont.variable} antialiased bg-[#050908] text-slate-100`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

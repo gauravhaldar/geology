@@ -10,15 +10,16 @@ import CareersSection from "../components/CareersSection";
 import NewsSection from "../components/NewsSection";
 import ContactFacultySection from "../components/ContactFacultySection";
 import Footer from "../components/Footer";
+import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#050908] text-slate-100">
-      <Navbar />
       <main>
         <Hero />
         <AboutSection />
         <ProgramsSection />
+        <Slider/>
         <AlumniSection />
         <TestimonialsSection />
         <AchievementsSection />
@@ -27,7 +28,6 @@ export default function Home() {
         <NewsSection />
         <ContactFacultySection />
       </main>
-      <Footer />
     </div>
   );
 }

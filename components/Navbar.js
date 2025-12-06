@@ -10,7 +10,7 @@ export default function Navbar() {
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C8A14D]">
-              Geology alumuni and geo sphere
+              Geology alumni and geo sphere
             </p>
             <p className="text-sm font-semibold text-slate-50">
               The M. S. University of Baroda
@@ -19,23 +19,23 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-6 md:flex">
-          <Link href="#about" className="hover:text-[#C8A14D]">
+          <Link href="/about" className="hover:text-[#C8A14D]">
             About
           </Link>
-          <Link href="#programs" className="hover:text-[#C8A14D]">
+          <Link href="/programs" className="hover:text-[#C8A14D]">
             Programs
           </Link>
-          <Link href="#alumni" className="hover:text-[#C8A14D]">
+          <Link href="/alumni" className="hover:text-[#C8A14D]">
             Alumni
           </Link>
-          <Link href="#careers" className="hover:text-[#C8A14D]">
+          <Link href="/careers" className="hover:text-[#C8A14D]">
             Careers
           </Link>
-          <Link href="#news" className="hover:text-[#C8A14D]">
+          <Link href="/news-events" className="hover:text-[#C8A14D]">
             News & Events
           </Link>
-          <Link href="#contact" className="rounded-full border border-[#C8A14D]/60 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#C8A14D] hover:bg-[#C8A14D] hover:text-[#1D3C34]">
-            Contact
+          <Link href="/be-member" className="rounded-full border border-[#C8A14D]/60 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#C8A14D] hover:bg-[#C8A14D] hover:text-[#1D3C34]">
+            Be a Member
           </Link>
         </div>
       </nav>
