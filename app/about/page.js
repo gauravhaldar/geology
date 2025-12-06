@@ -9,12 +9,63 @@ const academicStats = [
   { label: "Number of Institutes", value: 9 },
   { label: "Number of Schools", value: 2 },
   { label: "Number of Departments", value: 111 },
-  { label: "Number of Undergraduate Academic Programmes", value: 88 },
-  { label: "Number of Postgraduate Academic Programmes", value: 121 },
   { label: "Number of Ph.D. Programmes", value: 68 },
+  { label: "Number of Postgraduate Academic Programmes", value: 121 },
+  { label: "Number of Undergraduate Academic Programmes", value: 88 },
   { label: "Number of Postgraduate Diploma Academic Programmes", value: 34 },
   { label: "Number of Enrolled Students", value: 47000, suffix: "+" },
   { label: "Number of Registered Ph.D. Scholars", value: 1100, suffix: "+" },
+  { label: "Professors", value: 106 },
+  { label: "Associate Professors", value: 109 },
+  { label: "Assistant Professors", value: 297 },
+  { label: "Total Full Time Teachers", value: 512 },
+  { label: "Officers", value: 12 },
+  { label: "Technical-III", value: 159 },
+  { label: "Clerical-III", value: 96 },
+  { label: "Class-IV", value: 281 },
+  { label: "Total Non-Teaching", value: 548 },
+];
+
+const rankings = [
+  { framework: "NIRF", category: "University", rank: "90" },
+  { framework: "NIRF", category: "Overall", rank: "101-150" },
+  { framework: "Times Higher Education", category: "", rank: "1201+" },
+  { framework: "QS Asia", category: "", rank: "451-600" },
+  { framework: "QS India", category: "", rank: "78" },
+  { framework: "Scimago Institutions", category: "India", rank: "20" },
+  { framework: "Hansa Week", category: "India", rank: "31" },
+  { framework: "EduRank", category: "India", rank: "36", additional: "1 (Gujarat)" },
+];
+
+const milestones = [
+  { year: "1881", event: "Sir T. Madhav Rao, Diwan of Maharaja Sayajirao Gaekwad III started Baroda Arts and Science College" },
+  { year: "1886", event: "Establishment of College of Indian Music (Gayan Shala)" },
+  { year: "1890", event: "Establishment of Kalabhavan (Presently, Faculty of Technology and Engineering)" },
+  { year: "1909", event: "Formation of the Commission for the University." },
+  { year: "1935", event: "Establishment of Secondary Teachers' Training College (Presently, Faculty of Education and Psychology)" },
+  { year: "1946", event: "Establishment of Baroda Medical College (Presently, Faculty of Medicine) and Foundation of Sir Sayajirao Diamond Jubilee & Memorial Trust and handed over properties and possession to the trust which has been a part of University Senate Composition since then." },
+  { year: "1947", event: "Baroda College gets the status of a University." },
+  { year: "1948", event: "Establishment of Faculty of Family and Community Sciences" },
+  { year: "29 April 1949", event: "The Maharaja Sayajirao University of Baroda came into existence as Residential University with Maharaja Pratapsinhrao Gaekwad as its First Chancellor. He further established a philanthropic trust namely Sir Sayajirao Diamond Jubilee & Memorial Trust and handed over properties and possession to the trust which has been a part of University Senate Composition since then." },
+  { year: "1950", event: "Establishment of Faculty of Fine Arts and Faculty of Social Work" },
+  { year: "1952", event: "Establishment of Department of Russian" },
+  { year: "1953", event: "Establishment of Department of Archaeology and Ancient History" },
+  { year: "1954", event: "Establishment of Department of Political Science" },
+  { year: "1955", event: "Establishment of Department of Biochemistry" },
+  { year: "1956", event: "Establishment of Department of Library and Information Science" },
+  { year: "1957", event: "Establishment of Polytechnic as a Constituent College of the University" },
+  { year: "1960", event: "Establishment of Department of Sindhi" },
+  { year: "1961", event: "Establishment of Faculty of Law" },
+  { year: "1964", event: "Establishment of Departments of Linguistics and Microbiology" },
+  { year: "1965", event: "Establishment of M K Amin Arts, Science and Commerce College, Padra and Baroda Sanskrit Mahavidyalaya as Constituent Colleges of the University." },
+  { year: "1984", event: "Establishment of Faculty of Management Studies" },
+  { year: "1992", event: "Establishment of Faculty of Journalism and Communication" },
+  { year: "2001", event: "MSUB gets accredited Four Star Level by NAAC" },
+  { year: "2010", event: "MSUB gets accredited Grade B (CGPA 2.71) by NAAC" },
+  { year: "2013", event: "Establishment of Department of Computer Applications" },
+  { year: "2014", event: "Establishment of Department of Environmental Studies" },
+  { year: "2015", event: "Establishment of Faculty of Pharmacy (Previously, it was a Department under Faculty of Technology and Engineering)" },
+  { year: "2016", event: "MSUB gets accredited Grade A (CGPA 3.16) by NAAC" },
 ];
 
 const importantVisitors = [
@@ -698,14 +749,14 @@ const sections = [
       "Key numbers and highlights summarizing the university’s scale, reach and impact.",
     ],
   },
-  {
-    id: "best-practices",
-    label: "Best Practices",
-    title: "Best Practices",
-    body: [
-      "Institutional practices that reflect innovation, quality assurance, inclusivity and community engagement.",
-    ],
-  },
+  // {
+  //   id: "best-practices",
+  //   label: "Best Practices",
+  //   title: "Best Practices",
+  //   body: [
+  //     "Institutional practices that reflect innovation, quality assurance, inclusivity and community engagement.",
+  //   ],
+  // },
   {
     id: "milestones",
     label: "Milestones",
@@ -714,54 +765,56 @@ const sections = [
       "Significant milestones in the evolution and growth of MSUB over the decades.",
     ],
   },
-  {
-    id: "distinguished-alumni",
-    label: "Distinguished Alumni",
-    title: "Distinguished Alumni",
-    body: [
-      "Profiles of notable alumni who have excelled in diverse fields in India and abroad.",
-    ],
-    image: "/images/distinguished-alumni.jpg",
-  },
-  {
-    id: "photo-gallery",
-    label: "Photo Gallery",
-    title: "Photo Gallery",
-    body: [
-      "A curated visual journey through the campuses, events and life at MSUB.",
-    ],
-    image: "/images/photo-gallery.jpg",
-  },
-  {
-    id: "videos",
-    label: "Videos",
-    title: "Videos",
-    body: [
-      "Video resources and documentaries showcasing the university’s legacy and activities.",
-    ],
-  },
-  {
-    id: "code-of-conduct",
-    label: "Code of Conduct",
-    title: "Code of Conduct",
-    body: [
-      "Guidelines and principles governing the conduct of students, faculty and staff.",
-    ],
-  },
+  // {
+  //   id: "distinguished-alumni",
+  //   label: "Distinguished Alumni",
+  //   title: "Distinguished Alumni",
+  //   body: [
+  //     "Profiles of notable alumni who have excelled in diverse fields in India and abroad.",
+  //   ],
+  //   image: "/images/distinguished-alumni.jpg",
+  // },
+  // {
+  //   id: "photo-gallery",
+  //   label: "Photo Gallery",
+  //   title: "Photo Gallery",
+  //   body: [
+  //     "A curated visual journey through the campuses, events and life at MSUB.",
+  //   ],
+  //   image: "/images/photo-gallery.jpg",
+  // },
+  // {
+  //   id: "videos",
+  //   label: "Videos",
+  //   title: "Videos",
+  //   body: [
+  //     "Video resources and documentaries showcasing the university’s legacy and activities.",
+  //   ],
+  // },
+  // {
+  //   id: "code-of-conduct",
+  //   label: "Code of Conduct",
+  //   title: "Code of Conduct",
+  //   body: [
+  //     "Guidelines and principles governing the conduct of students, faculty and staff.",
+  //   ],
+  // },
   {
     id: "accreditation",
     label: "Accreditation",
     title: "Accreditation",
     body: [
-      "Information on statutory recognitions, accreditations and quality assurance bodies.",
+      "The Maharaja Sayajirao University of Baroda (MSUB) is recognized as one of the premier institutions of higher learning and research in the Country. Since its inception in 1949, the University has demonstrated a keen interest and a commitment to the sustenance and promotion of an environment, favorable to the growth and development of academic excellence – a commitment that forms a part of the rich legacy of the institution.",
+      "Educational institutions which preceded that Maharaja Sayajirao University of Baroda and which went on to forming a part of its foundational legacy, included the \"Baroda College\", one of the oldest centers of learning in Western India, founded in the year 1881 by His Highness Maharaja Sayajirao Gaekwad III. The enlightened ruler in the year 1909 establishing the \"Kalabhavan\". His Highness Maharaja Pratpsinhrao Gaekwad pursued the idea of establishing a University and on the recommendation of the committee, the Government of Baroda, in its order No. (R) 169-39 dated 21st February 1949 set up the University.",
     ],
+    image: "/about/accreditation.jpg",
   },
   {
     id: "ranking",
     label: "Ranking",
     title: "Ranking",
     body: [
-      "National and international ranking details of MSUB across various frameworks.",
+      "The Maharaja Sayajirao University of Baroda has achieved remarkable rankings across various national and international frameworks, reflecting its commitment to academic excellence and research.",
     ],
   },
   {
@@ -771,23 +824,24 @@ const sections = [
     body: [
       "Directions and connectivity details to reach the university by road, rail and air.",
     ],
+    images: ["/about/map1.jpg", "/about/map2.jpg"],
   },
-  {
-    id: "website-policy",
-    label: "Website Policy",
-    title: "Website Policy",
-    body: [
-      "Policies related to the use, maintenance and updating of the official university website.",
-    ],
-  },
-  {
-    id: "ict-policy",
-    label: "ICT Policy",
-    title: "ICT Policy",
-    body: [
-      "Guidelines for the use of information and communication technology resources of the university.",
-    ],
-  },
+  // {
+  //   id: "website-policy",
+  //   label: "Website Policy",
+  //   title: "Website Policy",
+  //   body: [
+  //     "Policies related to the use, maintenance and updating of the official university website.",
+  //   ],
+  // },
+  // {
+  //   id: "ict-policy",
+  //   label: "ICT Policy",
+  //   title: "ICT Policy",
+  //   body: [
+  //     "Guidelines for the use of information and communication technology resources of the university.",
+  //   ],
+  // },
 ];
 
 function classNames(...classes) {
@@ -882,7 +936,7 @@ export default function AboutPage() {
               ))}
             </div>
 
-            {activeSection.id === "academic-profile" && (
+            {(activeSection.id === "academic-profile" || activeSection.id === "msub-at-glance") && (
               <div className="mt-6 grid gap-4 text-xs sm:grid-cols-2">
                 {academicStats.map((stat) => (
                   <div
@@ -944,6 +998,60 @@ export default function AboutPage() {
               </div>
             )}
 
+            {activeSection.id === "milestones" && (
+              <div className="mt-6 overflow-x-auto text-xs">
+                <div className="space-y-4">
+                  {milestones.map((milestone, index) => (
+                    <div
+                      key={index}
+                      className="flex gap-4 border-b border-white/10 last:border-0 pb-4 last:pb-0"
+                    >
+                      <div className="flex-shrink-0 w-24 text-right">
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#C8A14D]">
+                          {milestone.year}
+                        </p>
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-[11px] leading-relaxed text-slate-200">
+                          {milestone.event}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {activeSection.id === "ranking" && (
+              <div className="mt-6 overflow-x-auto text-xs">
+                <div className="grid gap-4 text-[11px]">
+                  {rankings.map((ranking, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center justify-between rounded-lg border border-white/10 bg-black/20 px-4 py-3"
+                    >
+                      <div className="flex-1">
+                        <p className="font-semibold text-[#C8A14D] uppercase tracking-[0.18em]">
+                          {ranking.framework}
+                        </p>
+                        {ranking.category && (
+                          <p className="text-slate-300 mt-1">{ranking.category}</p>
+                        )}
+                      </div>
+                      <div className="text-right">
+                        <p className="text-lg font-bold text-slate-50">
+                          {ranking.rank}
+                        </p>
+                        {ranking.additional && (
+                          <p className="text-[#F1E0B3] text-sm mt-1">{ranking.additional}</p>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {activeSection.image && (
               <div className="mt-6 overflow-hidden rounded-xl border border-white/15 bg-black/30">
                 <Image
@@ -953,6 +1061,22 @@ export default function AboutPage() {
                   height={500}
                   className="h-90 w-full object-cover md:h-200"
                 />
+              </div>
+            )}
+
+            {activeSection.images && (
+              <div className="mt-6 space-y-4">
+                {activeSection.images.map((image, index) => (
+                  <div key={index} className="overflow-hidden rounded-xl border border-white/15 bg-black/30">
+                    <Image
+                      src={image}
+                      alt={`${activeSection.title} - Image ${index + 1}`}
+                      width={900}
+                      height={500}
+                      className="h-90 w-full object-cover md:h-200"
+                    />
+                  </div>
+                ))}
               </div>
             )}
           </section>
