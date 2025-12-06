@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#0b1412] pb-20 pt-16 text-slate-100">
+    <section className="relative overflow-hidden bg-[#0b1412] pb-20 pt-6 text-slate-100">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(200,161,77,0.22),_transparent_55%),_radial-gradient(circle_at_bottom,_rgba(29,60,52,0.9),_#050908)] opacity-90" />
       <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 md:flex-row md:items-center md:gap-14">
         <div className="max-w-xl">
