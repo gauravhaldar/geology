@@ -29,21 +29,21 @@ export default function Hero() {
 
         <div className="relative flex-1">
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-2xl border border-white/10 bg-[#111917]/80 p-4 shadow-lg shadow-black/40">
+            <div className="order-2 sm:order-1 rounded-2xl border border-white/10 bg-[#111917]/80 p-4 shadow-lg shadow-black/40">
               <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#C8A14D]">
                 Academic Depth
               </p>
               <p className="mt-3 text-3xl font-semibold text-slate-50">23</p>
               <p className="text-xs text-slate-300">Specialised subjects spanning pure & applied geology.</p>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-[#111917]/80 p-4 shadow-lg shadow-black/40">
+            <div className="order-3 sm:order-2 rounded-2xl border border-white/10 bg-[#111917]/80 p-4 shadow-lg shadow-black/40">
               <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#C8A14D]">
                 Research Legacy
               </p>
               <p className="mt-3 text-3xl font-semibold text-slate-50">125+</p>
               <p className="text-xs text-slate-300">Doctoral degrees completed under the department.</p>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#1D3C34] to-[#111917] p-4 shadow-lg shadow-black/40 sm:col-span-2">
+            <div className="order-1 sm:order-3 rounded-2xl border border-white/10 bg-gradient-to-br from-[#1D3C34] to-[#111917] p-4 shadow-lg shadow-black/40 sm:col-span-2">
               <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#F1E0B3]">
                 Where Our Alumni Are Today
               </p>
