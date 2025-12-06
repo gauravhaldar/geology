@@ -21,50 +21,50 @@ export default function GeologyNews() {
             <div className="grid md:grid-cols-2 gap-8">
               <article className="bg-[#0e1715] border border-white/10 rounded-lg p-8 hover:border-[#C8A14D]/50 transition-all">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-semibold text-slate-50">New Research Lab Inaugurated</h3>
-                  <span className="text-sm text-[#C8A14D] bg-[#050908] px-3 py-1 rounded">Dec 1, 2024</span>
+                  <h3 className="text-xl font-semibold text-slate-50">The prestigious award bestowed upon Shastri Kapildev by the Gujarat Sahitya Academy, Gandhinagar, for the best books of the year</h3>
+                  <span className="text-sm text-[#C8A14D] bg-[#050908] px-3 py-1 rounded">June 27, 2025</span>
                 </div>
-                <p className="text-slate-200 mb-4">
-                  State-of-the-art Geochemistry Research Laboratory inaugurated by the Vice-Chancellor, 
-                  featuring advanced analytical instruments for cutting-edge geological research.
-                </p>
-                <a href="#" className="text-[#C8A14D] hover:text-[#D5C7A1] transition-colors font-semibold">Read more →</a>
+                <div className="text-slate-200 mb-4">
+                  <p className="text-sm mb-2"><strong>News Paper:</strong> </p>
+                  <p className="text-sm mb-2"><strong>Edition:</strong> Vadodara</p>
+                  <p className="text-sm">27-06-2025</p>
+                </div>
               </article>
 
               <article className="bg-[#0e1715] border border-white/10 rounded-lg p-8 hover:border-[#C8A14D]/50 transition-all">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-semibold text-slate-50">International Conference 2024</h3>
-                  <span className="text-sm text-[#C8A14D] bg-[#050908] px-3 py-1 rounded">Nov 15, 2024</span>
+                  <h3 className="text-xl font-semibold text-slate-50">Tabla origin research reveals 11th century Sufi saint, not 13th century Amir Khusro</h3>
+                  <span className="text-sm text-[#C8A14D] bg-[#050908] px-3 py-1 rounded">September 25, 2023</span>
                 </div>
-                <p className="text-slate-200 mb-4">
-                  Department hosts International Conference on Sustainable Resource Management with 
-                  participants from 15 countries and 50+ research presentations.
-                </p>
-                <a href="#" className="text-[#C8A14D] hover:text-[#D5C7A1] transition-colors font-semibold">Read more →</a>
+                <div className="text-slate-200 mb-4">
+                  <p className="text-sm mb-2"><strong>News Paper:</strong> </p>
+                  <p className="text-sm mb-2"><strong>Edition:</strong> Vadodara</p>
+                  <p className="text-sm">25-09-2023</p>
+                </div>
               </article>
 
               <article className="bg-[#0e1715] border border-white/10 rounded-lg p-8 hover:border-[#C8A14D]/50 transition-all">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-semibold text-slate-50">Student Achievement</h3>
-                  <span className="text-sm text-[#C8A14D] bg-[#050908] px-3 py-1 rounded">Nov 10, 2024</span>
+                  <h3 className="text-xl font-semibold text-slate-50">Sanatan literature to be taught as value-added course</h3>
+                  <span className="text-sm text-[#C8A14D] bg-[#050908] px-3 py-1 rounded">August 22, 2023</span>
                 </div>
-                <p className="text-slate-200 mb-4">
-                  M.Sc. student wins Best Paper Award at National Geoscience Symposium for research 
-                  on groundwater contamination analysis.
-                </p>
-                <a href="#" className="text-[#C8A14D] hover:text-[#D5C7A1] transition-colors font-semibold">Read more →</a>
+                <div className="text-slate-200 mb-4">
+                  <p className="text-sm mb-2"><strong>News Paper:</strong> </p>
+                  <p className="text-sm mb-2"><strong>Edition:</strong> Vadodara</p>
+                  <p className="text-sm">22-08-2023</p>
+                </div>
               </article>
 
               <article className="bg-[#0e1715] border border-white/10 rounded-lg p-8 hover:border-[#C8A14D]/50 transition-all">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-semibold text-slate-50">Field Trip to Himalayas</h3>
-                  <span className="text-sm text-[#C8A14D] bg-[#050908] px-3 py-1 rounded">Oct 25, 2024</span>
+                  <h3 className="text-xl font-semibold text-slate-50">Geology museum, map to be upgraded</h3>
+                  <span className="text-sm text-[#C8A14D] bg-[#050908] px-3 py-1 rounded">August 21, 2023</span>
                 </div>
-                <p className="text-slate-200 mb-4">
-                  Annual geological field trip to Ladakh region provides hands-on experience in 
-                  structural geology and tectonic studies for final year students.
-                </p>
-                <a href="#" className="text-[#C8A14D] hover:text-[#D5C7A1] transition-colors font-semibold">Read more →</a>
+                <div className="text-slate-200 mb-4">
+                  <p className="text-sm mb-2"><strong>News Paper:</strong> </p>
+                  <p className="text-sm mb-2"><strong>Edition:</strong> Vadodara</p>
+                  <p className="text-sm">21-08-2023</p>
+                </div>
               </article>
             </div>
           </section>
