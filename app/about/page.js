@@ -772,22 +772,22 @@ const sections = [
       "Directions and connectivity details to reach the university by road, rail and air.",
     ],
   },
-  {
-    id: "website-policy",
-    label: "Website Policy",
-    title: "Website Policy",
-    body: [
-      "Policies related to the use, maintenance and updating of the official university website.",
-    ],
-  },
-  {
-    id: "ict-policy",
-    label: "ICT Policy",
-    title: "ICT Policy",
-    body: [
-      "Guidelines for the use of information and communication technology resources of the university.",
-    ],
-  },
+  // {
+  //   id: "website-policy",
+  //   label: "Website Policy",
+  //   title: "Website Policy",
+  //   body: [
+  //     "Policies related to the use, maintenance and updating of the official university website.",
+  //   ],
+  // },
+  // {
+  //   id: "ict-policy",
+  //   label: "ICT Policy",
+  //   title: "ICT Policy",
+  //   body: [
+  //     "Guidelines for the use of information and communication technology resources of the university.",
+  //   ],
+  // },
 ];
 
 function classNames(...classes) {
@@ -946,13 +946,15 @@ export default function AboutPage() {
 
             {activeSection.image && (
               <div className="mt-6 overflow-hidden rounded-xl border border-white/15 bg-black/30">
-                <Image
-                  src={activeSection.image}
-                  alt={activeSection.title}
-                  width={900}
-                  height={500}
-                  className="h-90 w-full object-cover md:h-200"
-                />
+                <div className="relative w-full max-h-[420px] sm:max-h-[520px]">
+                  <Image
+                    src={activeSection.image}
+                    alt={activeSection.title}
+                    width={900}
+                    height={500}
+                    className="h-auto w-full object-contain sm:object-cover"
+                  />
+                </div>
               </div>
             )}
           </section>

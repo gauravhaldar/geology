@@ -56,7 +56,7 @@ export default function ContactFacultySection() {
           </div>
 
           <div className="space-y-4 text-xs">
-            <form className="space-y-3 rounded-2xl border border-white/10 bg-[#0c1513] p-4">
+            {/* <form className="space-y-3 rounded-2xl border border-white/10 bg-[#0c1513] p-4">
               <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C8A14D]">
                 Contact Form
               </p>
@@ -89,7 +89,7 @@ export default function ContactFacultySection() {
               >
                 Submit Enquiry
               </button>
-            </form>
+            </form> */}
 
             <div className="rounded-2xl border border-white/10 bg-[#050908] p-4">
               <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C8A14D]">
@@ -100,10 +100,16 @@ export default function ContactFacultySection() {
                 <br />
                 The Maharaja Sayajirao University of Baroda, Vadodara, Gujarat, India.
               </p>
-              <div className="mt-3 h-32 rounded-xl border border-white/15 bg-black/40">
-                <div className="flex h-full items-center justify-center text-[11px] text-slate-300">
-                  Google Map embed placeholder – add official map iframe here.
-                </div>
+              <div className="mt-3 overflow-hidden rounded-xl border border-white/15 bg-black/40">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14763.81388058525!2d73.17355084382477!3d22.31759942526959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8cad5ef7941%3A0x5a613ac68ff3166a!2sThe%20Maharaja%20Sayajirao%20University%20of%20Baroda!5e0!3m2!1sen!2sin!4v1765018441723!5m2!1sen!2sin"
+                  width="100%"
+                  height="200"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </div>

@@ -86,11 +86,11 @@ export default function AlumniSection() {
                   key={item.src}
                   className="overflow-hidden rounded-xl border border-white/10 bg-black/40 shadow-md shadow-black/40"
                 >
-                  <div className="h-28 w-full bg-black">
+                  <div className="w-full bg-black aspect-[4/3]">
                     <img
                       src={item.src}
                       alt={item.label}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-contain sm:object-cover"
                     />
                   </div>
                   <p className="px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-200">
