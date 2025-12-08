@@ -180,6 +180,163 @@ export default function AlumniPage() {
           </div>
         </section>
 
+        {/* Detailed alumni & Office of Alumni Affairs content */}
+        <section className="mt-14 space-y-6 text-sm leading-relaxed text-slate-200">
+          <p>
+            Alumni are the face of the university to the world. An educational institute is
+            known by the progress of its alumni. It is a matter of pride for The Maharaja
+            Sayajirao University of Baroda to connect to its alumni through this portal.
+          </p>
+          <p>
+            While there are several department level alumni associations functioning within the
+            university, it is also important that there is inter-departmental and inter-
+            institute interaction amongst the alumni for a holistic progress of the university
+            in the times of inter-disciplinary professions and research being the need of the
+            hour. Office of Alumni Affairs was formed to provide an umbrella to the existing
+            alumni associations while giving them the complete freedom to carry out their
+            activities and to initiate the formation of alumni associations in the
+            departments/faculties where it does not exist.
+          </p>
+          <p>
+            The first thought of having such an office was initiated during the first ever
+            grand Reunion / Alumni Meet which happened in January 2013 at the university.
+            During the two days meet several distinguished alumni were felicitated and alumni
+            interactions took place at all departments as well as faculties. There was also an
+            exhibition to showcase the thrust areas of all the departments at the Union
+            Pavilion of the university. This was followed by a gala cultural programme by the
+            students of the Faculty of Performing Arts.
+          </p>
+          <p>
+            Subsequently, the Office of Alumni Affairs was established in January 2015 in the
+            university vide S.R. number 37 dated 20/12/2014 after confirmation of minutes in
+            the syndicate in January 2015. It was allotted the office premises at Chamelibaug
+            in October 2015 vide letter number No. R/MSU/T76 dated 6th January 2016.
+          </p>
+
+          <p className="font-semibold text-slate-100">
+            The major activities of the Office of Alumni Affairs are as follows:
+          </p>
+          <ul className="ml-5 list-disc space-y-1">
+            <li>Alumni interaction sessions</li>
+            <li>Coordination of Reunions / Alumni Meets</li>
+            <li>Heritage walk</li>
+            <li>Heritage exhibition</li>
+            <li>Coordination for alumni contributions / donations</li>
+          </ul>
+
+          <h2 className="mt-6 text-base font-semibold text-[#F1E0B3]">
+            Alumni Interaction Sessions
+          </h2>
+          <p>
+            An alumnus is the best connecting link between what is taught at an institute and
+            what are the recent developments on the field. Mentoring sessions by alumni can
+            help develop industry required skills amongst the students.
+          </p>
+          <p>
+            The activity of Alumni Interaction Session was initiated in July 2015 through the
+            heads of the departments of all the faculties under which it was attempted to
+            invite one alumnus of the department preferably every month or as frequently as
+            possible and arrange an interaction session with the students of the department.
+          </p>
+          <p className="font-semibold text-slate-100">The purpose of the activity was as follows:</p>
+          <ul className="ml-5 list-disc space-y-1">
+            <li>
+              To connect the alumni back to the department so as to enable creation /
+              strengthening of the database at departmental / faculty level.
+            </li>
+            <li>
+              To use the expertise and experience of the alumni for bridging the gap between
+              industry and academia and make our students industry ready.
+            </li>
+            <li>To enable strengthening / modification of syllabus if any.</li>
+            <li>To arrange site / industrial visits with the support of alumni.</li>
+            <li>
+              To improve placement scenario for students through knowledge gain and alumni
+              connections.
+            </li>
+          </ul>
+          <p>
+            The activity was well received and provided excellent support by most of the
+            departments especially in Faculty of Social Work, Faculty of Engineering and
+            Technology, Faculty of Family and Community Sciences, Faculty of Fine Arts,
+            Faculty of Pharmacy, Faculty of Performing Arts etc. The activity was also carried
+            out at Faculty of Commerce, some departments at Faculty of Science, Faculty of
+            Medicine and Faculty of Arts. Since the activity was targeted for students of
+            final year / master&apos;s courses, students of all those departments which carried
+            out the activities have benefitted.
+          </p>
+
+          <h2 className="mt-6 text-base font-semibold text-[#F1E0B3]">
+            Coordination for Reunions / Alumni Meets
+          </h2>
+          <p>
+            Reunions / Alumni Meets are occasions where the alumni not only bond with each
+            other but also the institute and existing staff and students. Such get-togethers
+            in coordination with the department / faculty are also an occasion to felicitate
+            the distinguished alumni.
+          </p>
+          <p>
+            The Office of Alumni Affairs has supported several reunions / alumni meets by
+            providing the database of alumni names, arranging press meets, coordinating with
+            the alumni through emails, arranging for logistics during the alumni meets (no
+            expenses on behalf of the office), documenting the meets etc. Major reunions /
+            alumni meet have happened at several departments at Faculty of Technology &amp;
+            Engineering, Faculty of Arts, Faculty of Fine Arts, Faculty of Performing Arts,
+            Faculty of Social Work, Faculty of Science, Faculty of Family and Community
+            Sciences.
+          </p>
+
+          <h2 className="mt-6 text-base font-semibold text-[#F1E0B3]">Heritage Walk</h2>
+          <p>
+            A heritage walk was initiated through the campus of The Maharaja Sayajirao
+            University of Baroda to bring awareness about the elements of heritage value
+            amongst the students, staff and alumni members of the university. The idea was
+            taking pride in the rich legacy of heritage buildings, paintings, murals, ancient
+            relics, instruments and elements available within the university. The walk was
+            open for the citizens of Vadodara too.
+          </p>
+          <p>
+            It is for the first time in the history of the university that a heritage walk was
+            conducted within the university. It was a successful event with the assistance of
+            student interns and volunteers of FOOTPRINTS team. The walk was sponsored by GAIL
+            India Ltd.
+          </p>
+
+          <h2 className="mt-6 text-base font-semibold text-[#F1E0B3]">Heritage Exhibition</h2>
+          <p>
+            The UNESCO world heritage week is celebrated every year during 18-24 November
+            across the world. The Office of Alumni Affairs participated in the heritage week
+            in collaboration with Vadodara People&apos;s Heritage Festival by supporting our
+            alumni for showcasing their personal collections of articles of heritage value in
+            the form of an exhibition in the premises of Chamelibaug. The heritage exhibition
+            was open for all the citizens of Vadodara, students and staff of the university.
+          </p>
+
+          <h2 className="mt-6 text-base font-semibold text-[#F1E0B3]">
+            Coordination for Alumni Contributions / Donations
+          </h2>
+          <p>
+            The Office of Alumni Affairs has coordinated with alumni for donations for
+            improving the infrastructure of the departments / faculties.
+          </p>
+
+          <h2 className="mt-6 text-base font-semibold text-[#F1E0B3]">Esteemed Alumni</h2>
+          <ul className="ml-5 list-disc space-y-1">
+            <li>Dr. Venki Ramakrishnan</li>
+            <li>Dr. Vijay Bhatkar</li>
+            <li>Justice Mohit Shah</li>
+            <li>Prof. Bakul Dholakia</li>
+            <li>Ms. Bharti Mukherjee</li>
+            <li>Shankarrao Thorat</li>
+            <li>Shri Ajay Bhatt</li>
+            <li>Shri Amarsinh Chaudhary</li>
+            <li>Shri Anshuman Gaekwad</li>
+            <li>Shri Atul Bedade</li>
+            <li>Shri Chimanbhai Patel</li>
+            <li>Shri D K Gaekwad</li>
+          </ul>
+        </section>
+
         {/* Highlight grid */}
         <section className="mt-12">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">

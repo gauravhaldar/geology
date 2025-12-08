@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const careerSectors = [
   {
@@ -68,6 +69,7 @@ function classNames(...classes) {
 }
 
 export default function CareersPage() {
+  const router = useRouter();
   const [activeSectorId, setActiveSectorId] = useState("industry");
 
   const activeSector =
@@ -83,17 +85,19 @@ export default function CareersPage() {
               Careers with Geology
             </p>
             <h1 className="mt-3 text-3xl font-semibold text-slate-50 sm:text-4xl">
-              Turning curiosity about the Earth into meaningful careers.
+              Department of Geology, Faculty of Science
             </h1>
             <p className="mt-4 text-sm leading-relaxed text-slate-200">
-              This page can help prospective and current students understand the range of
-              opportunities after completing programs in geology. All text on this page is
-              placeholder – replace it with your department-specific data, examples and
-              contacts.
+              The Department of Geology was established in 1951 in the Faculty of
+              Technology and Engineering. In 1965, it moved to its present venue in the
+              Faculty of Science with full-fledged undergraduate, postgraduate and
+              research programmes. An extension wing was added in 1987.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-slate-200">
-              You can outline typical career paths, highlight employer organisations, and
-              showcase how alumni have contributed across industries and regions.
+              Today, the department hosts 12 faculty members, including six Professors,
+              and is known for high-quality research and strong student mentoring.
+              Graduates build careers in industry, government, academia and emerging
+              geoscience domains.
             </p>
           </div>
 
@@ -120,8 +124,9 @@ export default function CareersPage() {
               ))}
             </div>
             <p className="mt-4 text-[11px] text-slate-300">
-              Replace these sectors with the most relevant options for your graduates and add
-              more as needed.
+              These broad sectors represent common pathways for our geology graduates,
+              from exploration and resource management to advanced research and
+              interdisciplinary careers.
             </p>
           </div>
         </section>
@@ -144,8 +149,9 @@ export default function CareersPage() {
                 Example roles
               </p>
               <p className="mt-2 text-slate-100">
-                Replace this text with specific job titles that your alumni typically occupy in
-                this sector.
+                Exploration geologist, hydrogeologist, engineering geologist, petroleum
+                geoscientist, environmental consultant, GIS & remote sensing analyst,
+                researcher, teacher and science communicator.
               </p>
             </div>
             <div className="rounded-lg border border-white/10 bg-black/25 px-3 py-3">
@@ -153,8 +159,10 @@ export default function CareersPage() {
                 Skills & preparation
               </p>
               <p className="mt-2 text-slate-100">
-                Mention key courses, software tools, field experiences or certifications that
-                strengthen readiness for this pathway.
+                Strong grounding in field geology, mineralogy, petrology, structural
+                geology and stratigraphy; exposure to geophysics, hydrogeology and
+                environmental geology; training in mapping, core logging, data
+                interpretation, and relevant software tools.
               </p>
             </div>
             <div className="rounded-lg border border-white/10 bg-black/25 px-3 py-3">
@@ -162,9 +170,113 @@ export default function CareersPage() {
                 Representative organisations
               </p>
               <p className="mt-2 text-slate-100">
-                List a few organisations, agencies or institutes where your graduates have
-                worked or interned.
+                Geological Survey of India, Central Ground Water Board, State
+                groundwater and mining departments, oil & gas companies, mineral
+                exploration agencies, environmental consultancies and academic
+                institutions.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Department, research and programmes */}
+        <section className="mt-12 rounded-2xl border border-white/10 bg-white/5 p-6 text-xs shadow-xl shadow-black/40">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C8A14D]">
+            About the department
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-slate-200">
+            The Department is known for producing high quality research publications in
+            reputed national and international journals. All staff members have excellent
+            academic credentials and are recognised research guides, with some members
+            having very high citation indices.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-slate-200">
+            Research is actively pursued in diverse areas, including:
+          </p>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-[11px] leading-relaxed text-slate-100">
+            <li>Quaternary climatic and hydrogeological changes in Western India.</li>
+            <li>
+              Evolution of coastal plains and sediment disposal systems along the Gulf of
+              Cambay and Kachchh.
+            </li>
+            <li>Geometry and nature of active faults in Gujarat.</li>
+            <li>Evolution of the Great and Little Rann of Kachchh using subsurface cores.</li>
+            <li>
+              Environmental conditions during the late Quaternary in the Nal-Bhal
+              corridor.
+            </li>
+            <li>
+              Structural and metamorphic history of the Aravalli Group of rocks of NE
+              Gujarat.
+            </li>
+            <li>
+              Ichnological and sedimentological studies of Mesozoic and Cenozoic
+              sequences in Gujarat.
+            </li>
+          </ul>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <div className="rounded-xl border border-white/10 bg-black/25 p-4">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#F1E0B3]">
+                Undergraduate programmes
+              </p>
+              <div className="mt-3 space-y-3 text-[11px] leading-relaxed text-slate-100">
+                <div>
+                  <p className="font-semibold text-slate-50">
+                    Bachelor of Science (Honors) in Geology
+                  </p>
+                  <p>
+                    A 3-year (6 semester) regular undergraduate programme offered by the
+                    Department of Geology.
+                  </p>
+                  <p className="mt-1">
+                    Eligibility is based on 12th standard theory marks of three science
+                    subjects only, with an eligibility percentage used for merit list
+                    preparation as per MSUB rules.
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-50">
+                    Bachelor of Science (Honors) in Geology (HPP)
+                  </p>
+                  <p>
+                    A 3-year (6 semester) Higher Payment Programme (HPP) version of the
+                    B.Sc. (Honors) in Geology.
+                  </p>
+                  <p className="mt-1">
+                    Admission is through the MSUB portal, following the same basic
+                    eligibility framework for 12th science theory marks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-xl border border-white/10 bg-black/25 p-4">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#F1E0B3]">
+                Postgraduate & doctoral programmes
+              </p>
+              <div className="mt-3 space-y-3 text-[11px] leading-relaxed text-slate-100">
+                <div>
+                  <p className="font-semibold text-slate-50">Master of Science in Geology</p>
+                  <p>
+                    A 2-year (4 semester) regular postgraduate programme. Admission is
+                    based solely on the merit of an entrance test.
+                  </p>
+                  <p className="mt-1">
+                    Applicants must hold a B.Sc. or equivalent (10+2+3) in a relevant
+                    subject with minimum marks as per category-wise requirements, and
+                    candidates appearing in the final year may also apply.
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-50">Ph.D. in Geology</p>
+                  <p>
+                    Doctoral research in geology is offered under the Faculty of Science,
+                    with emphasis on advanced field, laboratory and analytical work in the
+                    department&apos;s thrust areas.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -195,20 +307,99 @@ export default function CareersPage() {
         {/* FAQs */}
         <section className="mt-12 rounded-2xl border border-white/10 bg-white/5 p-5 text-[11px] shadow-xl shadow-black/40">
           <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#C8A14D]">
-            Frequently asked questions
+            MSUB in News & events
           </p>
           <p className="mt-2 text-[11px] text-slate-300">
-            Replace these items with questions your students commonly ask about careers,
-            placements and further studies.
+            A glimpse of recent coverage and activities related to the university and
+            the Department of Geology.
           </p>
 
-          <div className="mt-4 space-y-3">
-            {faqs.map((item) => (
-              <div key={item.q} className="rounded-xl border border-white/10 bg-black/20 p-3">
-                <p className="font-semibold text-slate-50">{item.q}</p>
-                <p className="mt-1 leading-relaxed text-slate-200">{item.a}</p>
+          <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div className="space-y-2">
+              <p className="font-semibold uppercase tracking-[0.18em] text-slate-50">
+                MSUB in News
+              </p>
+              <div className="space-y-2 text-[11px] leading-relaxed text-slate-200">
+                <div>
+                  <p>
+                    The prestigious award bestowed upon Shastri Kapildev by the Gujarat
+                    Sahitya Academy, Gandhinagar, for the best books of the year.
+                  </p>
+                  <p className="mt-1 text-[10px] text-slate-400">27-06-2025 · Vadodara</p>
+                </div>
+                <div>
+                  <p>
+                    Faculty of Management Studies welcomes you to the world of real
+                    estate (રિયલ એસ્ટેટની દુનિયામાં આપનું સ્વાગત).
+                  </p>
+                  <p className="mt-1 text-[10px] text-slate-400">10-04-2025 · Vadodara</p>
+                </div>
+                <div>
+                  <p>બરોડા સંસ્કૃત મહાવિદ્યાલય and ૧૧૦ વર્ષની પરંપરા: સંસ્કૃત વિદ્યાલયમાં.</p>
+                  <p className="mt-1 text-[10px] text-slate-400">2025 · Vadodara</p>
+                </div>
               </div>
-            ))}
+            </div>
+
+            <div className="space-y-2">
+              <p className="font-semibold uppercase tracking-[0.18em] text-slate-50">
+                Events
+              </p>
+              <div className="space-y-2 text-[11px] leading-relaxed text-slate-200">
+                <div>
+                  <p>Workshop on Detrital Thermochronology.</p>
+                  <p className="mt-1 text-[10px] text-slate-400">
+                    29-01-2020 · Faculty of Science · Department of Geology
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <p className="font-semibold uppercase tracking-[0.18em] text-slate-50">
+                Notifications
+              </p>
+              <div className="space-y-2 text-[11px] leading-relaxed text-slate-200">
+                <div>
+                  <p>FoS-Geology Merit list - 2025 and location-wise merit lists.</p>
+                  <p className="mt-1 text-[10px] text-slate-400">May–June 2025</p>
+                </div>
+                <div>
+                  <p>
+                    Result of M.Sc. Entrance Test in Geology and answer keys for SET
+                    A–D, FoS – 2025.
+                  </p>
+                  <p className="mt-1 text-[10px] text-slate-400">12-06-2025</p>
+                </div>
+                <div>
+                  <p>
+                    Provisional admission lists and merit lists for M.Sc. Geology (2021–
+                    2024) and B.Sc. Geology.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <p className="font-semibold uppercase tracking-[0.18em] text-slate-50">
+                Circulars & examinations
+              </p>
+              <div className="space-y-2 text-[11px] leading-relaxed text-slate-200">
+                <div>
+                  <p>
+                    Time Tables for B.Sc. Sem I, III, V and M.Sc. Sem III, Geology,
+                    Faculty of Science.
+                  </p>
+                  <p className="mt-1 text-[10px] text-slate-400">13-06-2025</p>
+                </div>
+                <div>
+                  <p>
+                    Schedule for regular and additional mid-semester examinations.
+                  </p>
+                  <p className="mt-1 text-[10px] text-slate-400">14-10-2021</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -219,21 +410,27 @@ export default function CareersPage() {
               Career guidance & support
             </p>
             <p className="mt-2 text-sm font-semibold text-slate-50 sm:text-base">
-              Use this space to share contact details for career cells, faculty coordinators or
-              alumni volunteers.
+              The Department of Geology actively supports students in planning their
+              academic and professional futures through dedicated faculty coordinators,
+              university-level career and placement cells, and a strong alumni network.
             </p>
             <p className="mt-2 text-[11px] leading-relaxed text-slate-300">
-              You may link to separate pages for placements and internships, or embed
-              downloadable reports summarising placement statistics and recruiter lists.
+              For detailed information on placements, internships, mentoring and
+              collaboration opportunities, you may connect with the Career Cell team
+              using the link alongside.
             </p>
           </div>
           <div className="mt-4 flex flex-wrap gap-3 sm:mt-0">
-            <button className="rounded-full border border-[#C8A14D]/70 px-4 py-1.5 font-semibold uppercase tracking-[0.2em] text-[#C8A14D] hover:bg-[#C8A14D] hover:text-[#1D3C34]">
+            <button
+              type="button"
+              onClick={() => router.push("/be-member")}
+              className="rounded-full border border-[#C8A14D]/70 px-4 py-1.5 font-semibold uppercase tracking-[0.2em] text-[#C8A14D] hover:bg-[#C8A14D] hover:text-[#1D3C34]"
+            >
               Contact Career Cell
             </button>
-            <button className="rounded-full border border-slate-400/60 px-4 py-1.5 font-semibold uppercase tracking-[0.2em] text-slate-100 hover:bg-slate-100 hover:text-[#050908]">
+            {/* <button className="rounded-full border border-slate-400/60 px-4 py-1.5 font-semibold uppercase tracking-[0.2em] text-slate-100 hover:bg-slate-100 hover:text-[#050908]">
               Placement Reports
-            </button>
+            </button> */}
           </div>
         </section>
       </div>
