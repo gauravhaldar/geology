@@ -43,7 +43,7 @@ export default function AlumniSection() {
               and sector, as well as an interactive world map.
             </p>
 
-            <div className="mt-6 space-y-3 rounded-2xl border border-emerald-500/30 bg-emerald-900/20 p-4 text-xs">
+            {/* <div className="mt-6 space-y-3 rounded-2xl border border-emerald-500/30 bg-emerald-900/20 p-4 text-xs">
               <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-emerald-200">
                 Alumni Registration Form (Concept)
               </p>
@@ -55,11 +55,11 @@ export default function AlumniSection() {
               <button className="mt-2 rounded-full border border-emerald-400/60 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-100 hover:bg-emerald-400 hover:text-[#0c1513]">
                 Register as Alumni
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div className="w-full max-w-xl space-y-6">
-            <div className="grid gap-4 sm:grid-cols-3">
+            {/* <div className="grid gap-4 sm:grid-cols-3">
               {sampleAlumni.map((alum) => (
                 <div
                   key={alum.name}
@@ -74,13 +74,13 @@ export default function AlumniSection() {
                   <p className="mt-1 text-[11px] text-slate-300">{alum.sector}</p>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             <div className="grid gap-4 text-xs sm:grid-cols-3">
               {[
-                { src: "alumini/alumini1.jpg", label: "Alumni field work" },
-                { src: "alumini/alumini2.jpeg", label: "Alumni meet" },
-                { src: "alumini/alumini3.jpeg", label: "Global alumni" },
+                { src: "alumini/alumini1.jpg", label: "Dhvani Jadav" },
+                { src: "alumini/alumini2.jpeg", label: "Avadh Gajera" },
+                { src: "alumini/alumini3.jpeg", label: "Yash Budheliya" },
               ].map((item) => (
                 <div
                   key={item.src}

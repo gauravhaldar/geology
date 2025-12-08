@@ -1,9 +1,9 @@
 export default function GallerySection() {
   const items = [
-    { label: "Field camps in the Himalaya", src: "/gallery/1.jpeg" },
-    { label: "Coastal geomorphology excursions", src: "/gallery/2.jpeg" },
-    { label: "Thin-section petrography lab", src: "/gallery/3.jpeg" },
-    { label: "Basin analysis workshop", src: "/gallery/4.jpeg" },
+    { label: "Vadodara People's Heritage Festival", src: "/gallery/1.jpeg" },
+    { label: "PUBCON-2019", src: "/gallery/2.jpeg" },
+    { label: "69th Annual Convocation", src: "/gallery/3.jpeg" },
+    { label: "Organised Tree Plantation", src: "/gallery/4.jpeg" },
   ];
 
   return (

@@ -47,10 +47,14 @@ export default function Hero() {
               <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#F1E0B3]">
                 Where Our Alumni Are Today
               </p>
-              <p className="mt-2 text-xs text-[#F8ECD0]">
+              {/* <p className="mt-2 text-xs text-[#F8ECD0]">
                 Alumni are placed across more than <span className="font-semibold">10 countries</span> in
                 resource exploration companies, government organisations, research institutes and
                 universities.
+              </p> */}
+              <p className="mt-2 text-xs text-[#F8ECD0]">
+                Graduates of this department now work across the Globe — in the <span className="font-semibold">USA, UK, Africa, the Gulf nations, India, and neighbouring countries</span> in
+               — across government organizations, private companies, and research institutions.
               </p>
               <div className="mt-4 h-28 rounded-xl border border-emerald-500/25 bg-[url('/hero.jpg')] bg-cover bg-center" />
             </div>

@@ -1,16 +1,22 @@
 export default function ContactFacultySection() {
-  const faculty = [
+  const contacts = [
     {
-      name: "Prof. (Dr.) Example Name",
-      role: "Head, Department of Geology",
-      speciality: "Sedimentology & Basin Analysis",
-      image: "/faculty/1.jpeg",
+      title: "I/C Controller of Examination",
+      name: "Prof. (Dr.) Bhavna Mehta",
+      phone: "0265-2795516",
+      email: "controller-exam@msubaroda.ac.in",
     },
     {
-      name: "Dr. Sample Faculty",
-      role: "Associate Professor",
-      speciality: "Structural Geology & Tectonics",
-      image: "/faculty/2.jpg",
+      title: "Joint Registrar (ADM/BC Cell/Legal/RTI)",
+      name: "Dr. Mayank Vyas",
+      phone: "0265-2782162",
+      email: "jr@msubaroda.ac.in",
+    },
+    {
+      title: "Deputy Registrar (ADE Section)",
+      name: "Vacant",
+      phone: "0265-2789485",
+      email: "dyr-ade@msubaroda.ac.in",
     },
   ];
 
@@ -30,25 +36,25 @@ export default function ContactFacultySection() {
               enquiries.
             </p>
 
-            <div className="mt-5 grid gap-3 text-xs sm:grid-cols-2">
-              {faculty.map((f) => (
+            <div className="mt-5 space-y-3">
+              {contacts.map((contact, index) => (
                 <div
-                  key={f.name}
-                  className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-white/10 bg-[#101b18] shadow-md shadow-black/40"
+                  key={index}
+                  className="overflow-hidden rounded-2xl border border-white/10 bg-[#101b18] shadow-md shadow-black/40"
                 >
-                  {f.image && (
-                    <div className="flex justify-center border-b border-white/10 bg-black/40">
-                      <img
-                        src={f.image}
-                        alt={f.name}
-                        className="h-24 w-24 object-cover"
-                      />
+                  <div className="p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#C8A14D] mb-2">
+                      {contact.title}
+                    </p>
+                    <p className="text-sm font-semibold text-slate-50">{contact.name}</p>
+                    <div className="mt-2 space-y-1">
+                      <p className="text-xs text-slate-300">
+                        <span className="text-[#C8A14D]">:</span> {contact.phone}
+                      </p>
+                      <p className="text-xs text-slate-300">
+                        <span className="text-[#C8A14D]">:</span> {contact.email}
+                      </p>
                     </div>
-                  )}
-                  <div className="p-3">
-                    <p className="text-sm font-semibold text-slate-50">{f.name}</p>
-                    <p className="text-[11px] text-slate-300">{f.role}</p>
-                    <p className="mt-1 text-slate-100">{f.speciality}</p>
                   </div>
                 </div>
               ))}

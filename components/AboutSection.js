@@ -8,17 +8,16 @@ export default function AboutSection() {
               About the Department
             </h2>
             <p className="mt-3 text-2xl font-semibold text-slate-50">
-              A legacy shaped by Prof. Dr. S. S. Mayer.
+              A legacy shaped by The Department of Geology
             </p>
             <p className="mt-4 text-sm leading-relaxed text-slate-200">
-              Founded nearly seven decades ago, the Department of Geology has steadily grown into a
-              nationally recognised centre for teaching and research in Earth sciences. Classroom
-              learning is closely interwoven with laboratory training, field camps, mapping
-              exercises, and industry-linked projects.
+              The Department of Geology was established in the year 1951 initially in the 
+              Faculty of Technology and Engineering with limited staff and equipment's with undergraduate teaching.
+               The present venue of the Department in the Faculty of Science was established in 1965 with full fledged undergraduate,
+                postgraduate courses and research programmes in varied disciplines of Geology.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-slate-200">
-              Generations of faculty, researchers, technical staff and students have contributed to
-              this heritage, creating a culture of rigour, curiosity and grounded field experience.
+              An extension wing was added in 1987. At present there are 12 faculty members in the Department, of which six are Professors.
             </p>
 
             <div className="mt-6 grid gap-4 text-xs sm:grid-cols-3">
@@ -63,8 +62,7 @@ export default function AboutSection() {
               Department Video Intro
             </p>
             <p className="mt-3 text-xs text-[#F8ECD0]">
-              A short film introducing our field camps, laboratories, classrooms and alumni
-              stories.
+              Hon'ble Chancellor's Address On The 71st Foundation Day Of University.
             </p>
             <div className="mt-4 w-full overflow-hidden rounded-xl border border-white/15 bg-black/40">
               <video

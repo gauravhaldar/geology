@@ -1,15 +1,15 @@
 export default function NewsSection() {
   const items = [
     {
-      title: "Annual Geological Field Camp",
+      title: "Fresher Party Of Regular Batch",
       date: "February 2025",
-      detail: "Students completed a 10-day mapping camp focusing on structural geology and sedimentary logging.",
-      image: "/news/1.jpg",
+      detail: "Students interacted with each other and celebrated their fresher party",
+      image: "/news/1.jpeg",
     },
     {
-      title: "Alumni Meet & Panel Discussion",
+      title: "Meeting with Dr. Ajit Kothari",
       date: "December 2024",
-      detail: "Alumni from industry, academia and government shared career journeys and mentored current batches.",
+      detail: "Dr. Ajit Kothari meeting ",
       image: "/news/2.jpeg",
     },
   ];
