@@ -47,14 +47,14 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className="mt-6 flex flex-wrap gap-3 text-xs">
+            {/* <div className="mt-6 flex flex-wrap gap-3 text-xs">
               <button className="rounded-full border border-[#C8A14D]/60 px-4 py-1.5 font-semibold uppercase tracking-[0.2em] text-[#C8A14D] hover:bg-[#C8A14D] hover:text-[#1D3C34]">
                 Download Brochure (PDF)
               </button>
               <button className="rounded-full border border-slate-500/60 px-4 py-1.5 font-semibold uppercase tracking-[0.2em] text-slate-200 hover:bg-slate-200 hover:text-[#0f1815]">
                 Achievements & Reports
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#1D3C34] via-[#121b19] to-[#444A53] p-5 shadow-xl shadow-black/50">

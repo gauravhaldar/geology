@@ -51,13 +51,13 @@ export default function Navbar() {
             {aboutOpen && (
               <div className="absolute left-0 top-full mt-1 w-48 rounded-md border border-white/10 bg-[#050908] py-2 text-sm shadow-lg">
                 <Link
-                  href="research-papers"
+                  href="/research-papers"
                   className="block px-4 py-2 text-slate-100 hover:bg-white/5 hover:text-[#C8A14D]"
                 >
                   Research papers
                 </Link>
                 <Link
-                  href="faculty-members"
+                  href="/faculty-members"
                   className="block px-4 py-2 text-slate-100 hover:bg-white/5 hover:text-[#C8A14D]"
                 >
                   Faculty & Members
@@ -132,14 +132,14 @@ export default function Navbar() {
               </Link>
               <div className="ml-4 flex flex-col border-l border-white/10 pl-3 text-[13px]">
                 <Link
-                  href="/about/research-papers"
+                  href="/research-papers"
                   className="py-1 text-slate-200 hover:text-[#C8A14D]"
                   onClick={() => setOpen(false)}
                 >
                   Research papers
                 </Link>
                 <Link
-                  href="/about/faculty-members"
+                  href="/faculty-members"
                   className="py-1 text-slate-200 hover:text-[#C8A14D]"
                   onClick={() => setOpen(false)}
                 >

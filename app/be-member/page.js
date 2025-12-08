@@ -9,11 +9,12 @@ export default function BeMemberPage() {
 
   async function handleSubmit(event) {
     event.preventDefault();
+    const form = event.currentTarget;
     setSubmitting(true);
     setSuccess("");
     setError("");
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
 
     try {
       const res = await fetch("/api/be-member", {
@@ -21,12 +22,19 @@ export default function BeMemberPage() {
         body: formData,
       });
 
-      if (!res.ok) {
-        throw new Error("Failed to submit form");
+      let data = null;
+      try {
+        data = await res.json();
+      } catch (e) {
+        data = null;
       }
 
-      setSuccess("Your CV details have been submitted successfully.");
-      event.currentTarget.reset();
+      if (data && data.success) {
+        setSuccess("Your CV details have been submitted successfully.");
+        form.reset();
+      } else {
+        setError("There was a problem submitting the form. Please try again.");
+      }
     } catch (err) {
       setError("There was a problem submitting the form. Please try again.");
     } finally {
