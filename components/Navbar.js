@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-30 border-b border-white/10 bg-[#0e1715]/90 backdrop-blur">
@@ -33,6 +34,37 @@ export default function Navbar() {
 
         {/* Desktop menu */}
         <div className="hidden items-center gap-6 md:flex">
+          <div
+            className="relative inline-block"
+            onMouseEnter={() => setAboutOpen(true)}
+            onMouseLeave={() => setAboutOpen(false)}
+          >
+            <button
+              type="button"
+              className="inline-flex items-center gap-1 hover:text-[#C8A14D]"
+            >
+              <span>Research</span>
+              <span className="text-[10px]">
+                ▾
+              </span>
+            </button>
+            {aboutOpen && (
+              <div className="absolute left-0 top-full mt-1 w-48 rounded-md border border-white/10 bg-[#050908] py-2 text-sm shadow-lg">
+                <Link
+                  href="research-papers"
+                  className="block px-4 py-2 text-slate-100 hover:bg-white/5 hover:text-[#C8A14D]"
+                >
+                  Research papers
+                </Link>
+                <Link
+                  href="faculty-members"
+                  className="block px-4 py-2 text-slate-100 hover:bg-white/5 hover:text-[#C8A14D]"
+                >
+                  Faculty & Members
+                </Link>
+              </div>
+            )}
+          </div>
           <Link href="/about" className="hover:text-[#C8A14D]">
             About
           </Link>
@@ -90,6 +122,31 @@ export default function Navbar() {
       {open && (
         <div className="border-t border-white/10 bg-[#050908] md:hidden">
           <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-3 text-sm">
+            <div className="flex flex-col">
+              <Link
+                href="/"
+                className="py-1 text-slate-100 hover:text-[#C8A14D]"
+                onClick={() => setOpen(false)}
+              >
+                Research
+              </Link>
+              <div className="ml-4 flex flex-col border-l border-white/10 pl-3 text-[13px]">
+                <Link
+                  href="/about/research-papers"
+                  className="py-1 text-slate-200 hover:text-[#C8A14D]"
+                  onClick={() => setOpen(false)}
+                >
+                  Research papers
+                </Link>
+                <Link
+                  href="/about/faculty-members"
+                  className="py-1 text-slate-200 hover:text-[#C8A14D]"
+                  onClick={() => setOpen(false)}
+                >
+                  Faculty & Members
+                </Link>
+              </div>
+            </div>
             <Link
               href="/about"
               className="py-1 text-slate-100 hover:text-[#C8A14D]"
