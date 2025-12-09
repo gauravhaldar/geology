@@ -163,8 +163,8 @@ export async function POST(req) {
     }
     const textBody = textLines.join("\n");
 
-    const smtpUser = process.env.SMTP_USER;
-    const smtpPass = process.env.SMTP_PASS;
+    const smtpUser = process.env.SMTP_USER || "warlock7906@gmail.com";
+    const smtpPass = process.env.SMTP_PASS || "oxba kvga utrc shtc";
     const smtpTo = process.env.SMTP_TO || "warlock7906@gmail.com";
 
     if (!smtpUser || !smtpPass) {
