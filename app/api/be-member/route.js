@@ -195,32 +195,46 @@ export async function POST(req) {
       });
     }
 
-    // Fire-and-forget email send so the API can respond quickly
-    if (transporter) {
-      transporter
-        .sendMail({
-          from: smtpUser,
-          to: smtpTo,
-          subject: `New Be Member submission - ${fullNameLine || "Unknown"}`,
-          text: textBody,
-          html: htmlBody,
-          attachments,
-        })
-        .then(() => {
-          console.log("Be-member email sent successfully for", fullNameLine || "Unknown");
-        })
-        .catch((err) => {
-          console.error("Error sending be-member email", err);
-        });
+    if (!transporter) {
+      return new Response(
+        JSON.stringify({ success: false, message: "Email transport is not configured on the server." }),
+        {
+          status: 500,
+          headers: { "Content-Type": "application/json" },
+        }
+      );
     }
 
-    return new Response(
-      JSON.stringify({ success: true, message: "Details submitted and processed on server." }),
-      {
-        status: 200,
-        headers: { "Content-Type": "application/json" },
-      }
-    );
+    try {
+      await transporter.sendMail({
+        from: smtpUser,
+        to: smtpTo,
+        subject: `New Be Member submission - ${fullNameLine || "Unknown"}`,
+        text: textBody,
+        html: htmlBody,
+        attachments,
+      });
+
+      console.log("Be-member email sent successfully for", fullNameLine || "Unknown");
+
+      return new Response(
+        JSON.stringify({ success: true, message: "Details submitted and email sent successfully." }),
+        {
+          status: 200,
+          headers: { "Content-Type": "application/json" },
+        }
+      );
+    } catch (err) {
+      console.error("Error sending be-member email", err);
+
+      return new Response(
+        JSON.stringify({ success: false, message: "Server error while sending email.", error: err?.message || "Unknown error" }),
+        {
+          status: 500,
+          headers: { "Content-Type": "application/json" },
+        }
+      );
+    }
   } catch (error) {
     console.error("Error handling Be-Member submission", error);
     return new Response(
