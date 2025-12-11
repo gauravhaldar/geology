@@ -5,51 +5,123 @@ import Image from "next/image";
 
 const sliderAlumni = [
   {
-    name: "Alumnus Name 1",
+    name: "Justice Mohit Shah",
     title: "Geologist, Exploration & Mining",
     quote:
       "This is a sample quote from an alumnus. You can replace this text with real stories from your graduates.",
-    image: "/alumni/slide-1.jpg",
+    image: "/alumini/Justice Mohit Shah.jpeg",
     batch: "Batch 19XX-19XX",
   },
   {
-    name: "Alumnus Name 2",
+    name: "Ms. Bharti Mukherjee",
     title: "Research Scientist, Earth Sciences",
     quote:
-      "Use this area to highlight impact, fieldwork memories, or how the department shaped career journeys.",
-    image: "/alumni/slide-2.jpg",
+      "Use this area to highlight impact, fieldwork memories, or how the Department shaped career journeys.",
+    image: "/alumini/Ms. Bharti Mukherjee.jpg",
     batch: "Batch 20XX-20XX",
   },
   {
-    name: "Alumnus Name 3",
+    name: "Prof. Bakul Dholakia",
     title: "Energy & Sustainability Consultant",
     quote:
       "You can showcase global roles, leadership positions and contributions to industry or academia.",
-    image: "/alumni/slide-3.jpg",
+    image: "/alumini/Prof. Bakul Dholakia.jpg",
+    batch: "Batch 20XX-20XX",
+  },
+  {
+    name: "Shri Ajay Bhatt",
+    title: "Leadership / Industry",
+    quote:
+      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
+    image: "/alumini/Shri Ajay Bhatt.jpg",
+    batch: "Batch 20XX-20XX",
+  },
+  {
+    name: "Shri Amarsinh Chaudhary",
+    title: "Research / Academia",
+    quote:
+      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
+    image: "/alumini/Shri Amarsinh Chaudhary.jpg",
+    batch: "Batch 20XX-20XX",
+  },
+  {
+    name: "Shri Anshuman Gaekwad",
+    title: "Entrepreneurship",
+    quote:
+      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
+    image: "/alumini/Shri Anshuman Gaekwad.jpeg",
+    batch: "Batch 20XX-20XX",
+  },
+  {
+    name: "Shri Atul Bedade",
+    title: "Public Service",
+    quote:
+      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
+    image: "/alumini/Shri Atul Bedade.jpeg",
+    batch: "Batch 20XX-20XX",
+  },
+  {
+    name: "Shri Chimanbhai Patel",
+    title: "Public Service",
+    quote:
+      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
+    image: "/alumini/Shri Chimanbhai Patel.jpg",
+    batch: "Batch 20XX-20XX",
+  },
+  {
+    name: "Shri D K Gaekwad",
+    title: "Public Service",
+    quote:
+      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
+    image: "/alumini/Shri D K Gaekwad.jpg",
+    batch: "Batch 20XX-20XX",
+  },
+  {
+    name: "Shri Dadasaheb Phalke",
+    title: "Public Service",
+    quote:
+      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
+    image: "/alumini/Shri Dadasaheb Phalke.jpeg",
+    batch: "Batch 20XX-20XX",
+  },
+  {
+    name: "Shri Kiran More",
+    title: "Public Service",
+    quote:
+      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
+    image: "/alumini/Shri Kiran More.jpeg",
+    batch: "Batch 20XX-20XX",
+  },
+  {
+    name: "Shri Nayan Mongia",
+    title: "Public Service",
+    quote:
+      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
+    image: "/alumini/Shri Nayan Mongia.jpeg",
     batch: "Batch 20XX-20XX",
   },
 ];
 
 const highlightAlumni = [
   {
-    name: "Alumnus A",
+    name: "Justice Mohit Shah",
     role: "Leadership / Industry",
-    image: "/alumni/highlight-1.jpg",
+    image: "/alumini/Justice Mohit Shah.jpeg",
   },
   {
-    name: "Alumnus B",
+    name: "Ms. Bharti Mukherjee",
     role: "Research / Academia",
-    image: "/alumni/highlight-2.jpg",
+    image: "/alumini/Ms. Bharti Mukherjee.jpg",
   },
   {
-    name: "Alumnus C",
+    name: "Prof. Bakul Dholakia",
     role: "Entrepreneurship",
-    image: "/alumni/highlight-3.jpg",
+    image: "/alumini/Prof. Bakul Dholakia.jpg",
   },
   {
-    name: "Alumnus D",
+    name: "Shri Ajay Bhatt",
     role: "Public Service",
-    image: "/alumni/highlight-4.jpg",
+    image: "/alumini/Shri Ajay Bhatt.jpg",
   },
 ];
 
