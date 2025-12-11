@@ -6,121 +6,69 @@ import Image from "next/image";
 const sliderAlumni = [
   {
     name: "Justice Mohit Shah",
-    title: "Geologist, Exploration & Mining",
-    quote:
-      "This is a sample quote from an alumnus. You can replace this text with real stories from your graduates.",
     image: "/alumini/Justice Mohit Shah.jpeg",
-    batch: "Batch 19XX-19XX",
   },
   {
     name: "Ms. Bharti Mukherjee",
-    title: "Research Scientist, Earth Sciences",
-    quote:
-      "Use this area to highlight impact, fieldwork memories, or how the Department shaped career journeys.",
     image: "/alumini/Ms. Bharti Mukherjee.jpg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Prof. Bakul Dholakia",
-    title: "Energy & Sustainability Consultant",
-    quote:
-      "You can showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Prof. Bakul Dholakia.jpg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Shri Ajay Bhatt",
-    title: "Leadership / Industry",
-    quote:
-      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Shri Ajay Bhatt.jpg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Shri Amarsinh Chaudhary",
-    title: "Research / Academia",
-    quote:
-      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Shri Amarsinh Chaudhary.jpg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Shri Anshuman Gaekwad",
-    title: "Entrepreneurship",
-    quote:
-      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Shri Anshuman Gaekwad.jpeg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Shri Atul Bedade",
-    title: "Public Service",
-    quote:
-      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Shri Atul Bedade.jpeg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Shri Chimanbhai Patel",
-    title: "Public Service",
-    quote:
-      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Shri Chimanbhai Patel.jpg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Shri D K Gaekwad",
-    title: "Public Service",
-    quote:
-      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Shri D K Gaekwad.jpg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Shri Dadasaheb Phalke",
-    title: "Public Service",
-    quote:
-      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Shri Dadasaheb Phalke.jpeg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Shri Kiran More",
-    title: "Public Service",
-    quote:
-      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Shri Kiran More.jpeg",
-    batch: "Batch 20XX-20XX",
   },
   {
     name: "Shri Nayan Mongia",
-    title: "Public Service",
-    quote:
-      "Use this area to showcase global roles, leadership positions and contributions to industry or academia.",
     image: "/alumini/Shri Nayan Mongia.jpeg",
-    batch: "Batch 20XX-20XX",
   },
 ];
 
 const highlightAlumni = [
   {
     name: "Justice Mohit Shah",
-    role: "Leadership / Industry",
     image: "/alumini/Justice Mohit Shah.jpeg",
   },
   {
     name: "Ms. Bharti Mukherjee",
-    role: "Research / Academia",
     image: "/alumini/Ms. Bharti Mukherjee.jpg",
   },
   {
     name: "Prof. Bakul Dholakia",
-    role: "Entrepreneurship",
     image: "/alumini/Prof. Bakul Dholakia.jpg",
   },
   {
     name: "Shri Ajay Bhatt",
-    role: "Public Service",
     image: "/alumini/Shri Ajay Bhatt.jpg",
   },
 ];
@@ -169,22 +117,16 @@ export default function AlumniPage() {
             <p className="mt-4 text-sm leading-relaxed text-slate-200">
               This alumni page is a dedicated space to celebrate your graduates, their journeys
               and their contributions across industry, academia, research and public service.
-              You can replace all of this placeholder content with real data and images.
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-slate-200">
-              Use it to feature distinguished alumni, cohort memories, reunion highlights,
-              and ongoing collaborations between the department and its vibrant alumni
-              network.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3 text-xs">
+            {/* <div className="mt-6 flex flex-wrap gap-3 text-xs">
               <button className="rounded-full border border-[#C8A14D]/60 px-4 py-1.5 font-semibold uppercase tracking-[0.2em] text-[#C8A14D] hover:bg-[#C8A14D] hover:text-[#1D3C34]">
                 Share Your Story
               </button>
               <button className="rounded-full border border-slate-500/60 px-4 py-1.5 font-semibold uppercase tracking-[0.2em] text-slate-200 hover:bg-slate-200 hover:text-[#0f1815]">
                 Alumni Association
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Main slider */}
@@ -208,13 +150,6 @@ export default function AlumniPage() {
                 </p>
                 <p className="mt-1 text-sm font-semibold text-slate-50">
                   {activeSlide.name}
-                </p>
-                <p className="text-[11px] text-slate-200">{activeSlide.title}</p>
-                <p className="mt-2 line-clamp-3 text-[11px] leading-relaxed text-[#F8ECD0]">
-                  {activeSlide.quote}
-                </p>
-                <p className="mt-2 text-[10px] uppercase tracking-[0.18em] text-slate-300">
-                  {activeSlide.batch}
                 </p>
               </div>
 
@@ -420,10 +355,6 @@ export default function AlumniPage() {
                 Snapshots from the alumni galaxy.
               </h2>
             </div>
-            <p className="max-w-xl text-xs text-slate-300">
-              Replace these cards with real alumni photos and short captions – awards, field
-              photos, reunion moments, keynote talks and more.
-            </p>
           </div>
 
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -443,15 +374,8 @@ export default function AlumniPage() {
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                 </div>
                 <div className="flex flex-1 flex-col p-3 text-xs">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#F1E0B3]">
-                    {alumnus.role}
-                  </p>
-                  <p className="mt-2 text-sm font-semibold text-slate-50">
+                  <p className="text-sm font-semibold text-slate-50">
                     {alumnus.name}
-                  </p>
-                  <p className="mt-2 line-clamp-3 text-[11px] leading-relaxed text-slate-300">
-                    Short description or achievement highlight can be written here for this
-                    alumnus.
                   </p>
                 </div>
               </div>
