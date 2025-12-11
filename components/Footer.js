@@ -33,7 +33,7 @@ export default function Footer() {
             <h4 className="font-semibold text-[#C8A14D] mb-4 text-sm">Quick Navigation</h4>
             <ul className="text-xs text-gray-300 space-y-2">
               <li><Link href="/" className="hover:text-[#C8A14D] transition-colors">Home</Link></li>
-              <li><Link href="/about" className="hover:text-[#C8A14D] transition-colors">About the Department</Link></li>
+              <li><Link href="/about-geology-department" className="hover:text-[#C8A14D] transition-colors">About the Department</Link></li>
               <li><Link href="/alumni" className="hover:text-[#C8A14D] transition-colors">Alumni Directory</Link></li>
               <li><Link href="/research-papers" className="hover:text-[#C8A14D] transition-colors">Research & Publications</Link></li>
               <li><Link href="/news-events" className="hover:text-[#C8A14D] transition-colors">Events / Seminars</Link></li>
