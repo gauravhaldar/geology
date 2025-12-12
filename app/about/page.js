@@ -661,7 +661,7 @@ const sections = [
 
 "I firmly believe that the teachers serve as the pillars to any institution and the students as its roof, thereby, making the institution a home for knowledge and I am dedicated to make this university a joyous and dynamic place where students, teachers and the members can come together as a whole family.",
     ],
-    image: "/images/vc-desk.jpg",
+    // image: "/images/vc-desk.jpg",
   },
   {
     id: "brief-profile",

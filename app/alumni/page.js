@@ -104,9 +104,9 @@ export default function AlumniPage() {
 
   return (
     <main className="min-h-screen bg-[#050908] py-16 text-slate-100">
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="mx-auto w-full max-w-6xl px-4">
         {/* Hero / Intro */}
-        <section className="grid gap-10 md:grid-cols-[1.4fr,1.1fr] md:items-center">
+        <section className="grid gap-8 md:grid-cols-[1.4fr,1.1fr] md:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#C8A14D]">
               Alumni of Geology Department
@@ -130,9 +130,9 @@ export default function AlumniPage() {
           </div>
 
           {/* Main slider */}
-          <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#1D3C34] via-[#121b19] to-[#444A53] p-5 shadow-xl shadow-black/50">
+          <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#1D3C34] via-[#121b19] to-[#444A53] p-4 sm:p-5 shadow-xl shadow-black/50">
             <div className="relative overflow-hidden rounded-xl border border-white/15 bg-black/40">
-              <div className="relative w-full aspect-video">
+              <div className="relative w-full aspect-[4/5] sm:aspect-video">
                 <Image
                   src={activeSlide.image}
                   alt={activeSlide.name}
@@ -154,15 +154,15 @@ export default function AlumniPage() {
               </div>
 
               {/* Slider controls */}
-              <div className="absolute inset-x-0 top-0 flex items-center justify-between p-3 text-[10px]">
+              <div className="absolute inset-x-0 top-0 flex items-center justify-between gap-2 p-3 text-[10px]">
                 <button
                   type="button"
                   onClick={prev}
-                  className="rounded-full border border-white/30 bg-black/40 px-2 py-1 font-semibold uppercase tracking-[0.18em] text-slate-100 hover:bg-white/15"
+                  className="rounded-full border border-white/30 bg-black/40 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.18em] text-slate-100 hover:bg-white/15"
                 >
                   Prev
                 </button>
-                <div className="flex gap-1">
+                <div className="flex items-center justify-center gap-1">
                   {sliderAlumni.map((_, i) => (
                     <button
                       key={i}
@@ -178,7 +178,7 @@ export default function AlumniPage() {
                 <button
                   type="button"
                   onClick={next}
-                  className="rounded-full border border-white/30 bg-black/40 px-2 py-1 font-semibold uppercase tracking-[0.18em] text-slate-100 hover:bg-white/15"
+                  className="rounded-full border border-white/30 bg-black/40 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.18em] text-slate-100 hover:bg-white/15"
                 >
                   Next
                 </button>
@@ -357,13 +357,13 @@ export default function AlumniPage() {
             </div>
           </div>
 
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {highlightAlumni.map((alumnus) => (
               <div
                 key={alumnus.name}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-black/40"
               >
-                <div className="relative h-40 w-full overflow-hidden bg-black/40">
+                <div className="relative w-full overflow-hidden bg-black/40 aspect-square sm:aspect-[4/3]">
                   <Image
                     src={alumnus.image}
                     alt={alumnus.name}

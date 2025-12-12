@@ -4,7 +4,7 @@ export default function TestimonialsSection() {
       name: "Dr. K. Desai",
       role: "Principal Geologist, Global Mining Firm",
       quote:
-        "The department&apos;s strong emphasis on field mapping and core logging gave me the confidence to lead exploration teams across challenging terrains.",
+        "The department strong emphasis on field mapping and core logging gave me the confidence to lead exploration teams across challenging terrains.",
     },
     {
       name: "Ms. S. Iyer",
