@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#0b1412] pb-20 pt-2 text-slate-100">
@@ -18,12 +20,16 @@ export default function Hero() {
             industries, national research organisations, and sustainable development sectors.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-xs">
-            <span className="rounded-full border border-emerald-500/50 bg-emerald-900/30 px-3 py-1 text-emerald-100">
-              Field-based learning culture
-            </span>
-            <span className="rounded-full border border-[#C8A14D]/40 bg-[#3b2f16]/60 px-3 py-1 text-[#F5E7C4]">
-              Strong alumni network
-            </span>
+            <Link href="/programs">
+              <button className="rounded-full border border-emerald-500/50 bg-emerald-900/30 px-3 py-1 text-emerald-100 hover:bg-emerald-900/50 transition-colors cursor-pointer">
+                Field-based learning culture
+              </button>
+            </Link>
+            <Link href="/alumni">
+              <button className="rounded-full border border-[#C8A14D]/40 bg-[#3b2f16]/60 px-3 py-1 text-[#F5E7C4] hover:bg-[#3b2f16]/80 transition-colors cursor-pointer">
+                Strong alumni network
+              </button>
+            </Link>
           </div>
         </div>
 
