@@ -1,35 +1,24 @@
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
-import fs from 'fs/promises';
-import path from 'path';
-
-const DATA_FILE = path.join(process.cwd(), 'data', 'referenceMaps.json');
-
-async function readStoredMaps() {
-  try {
-    const raw = await fs.readFile(DATA_FILE, 'utf8');
-    const parsed = JSON.parse(raw);
-    if (Array.isArray(parsed)) return parsed;
-    return [];
-  } catch (err) {
-    // If file missing or invalid, treat as empty
-    return [];
-  }
-}
-
-async function writeStoredMaps(items) {
-  await fs.writeFile(DATA_FILE, JSON.stringify(items, null, 2), 'utf8');
-}
+import clientPromise from '@/lib/mongodb';
 
 // GET /api/reference-maps
-// Returns all stored uploaded maps
+// Returns all stored uploaded maps from MongoDB
 export async function GET() {
   try {
-    const items = await readStoredMaps();
-    return NextResponse.json({ items }, { status: 200 });
+    const client = await clientPromise;
+    const db = client.db('geology_db');
+    const collection = db.collection('reference_maps');
+
+    const items = await collection
+      .find({})
+      .sort({ createdAt: -1 })
+      .toArray();
+
+    return NextResponse.json({ success: true, items }, { status: 200 });
   } catch (err) {
-    console.error('Error reading stored maps:', err);
-    return NextResponse.json({ error: 'Failed to load maps' }, { status: 500 });
+    console.error('Error reading reference maps:', err);
+    return NextResponse.json({ success: false, error: 'Failed to load maps' }, { status: 500 });
   }
 }
 
@@ -115,14 +104,15 @@ export async function POST(request) {
       downloadUrl: data.secure_url,
       cloudinaryPublicId: data.public_id,
       cloudinaryResourceType: data.resource_type,
-      createdAt: new Date().toISOString(),
+      createdAt: new Date(),
     };
 
-    const existing = await readStoredMaps();
-    existing.push(storedItem);
-    await writeStoredMaps(existing);
+    const client = await clientPromise;
+    const db = client.db('geology_db');
+    const collection = db.collection('reference_maps');
+    await collection.insertOne(storedItem);
 
-    return NextResponse.json(storedItem, { status: 200 });
+    return NextResponse.json({ success: true, item: storedItem }, { status: 200 });
   } catch (err) {
     console.error('Error uploading to Cloudinary:', err);
     return NextResponse.json(

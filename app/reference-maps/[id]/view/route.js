@@ -1,19 +1,5 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs/promises';
-import path from 'path';
-
-const DATA_FILE = path.join(process.cwd(), 'data', 'referenceMaps.json');
-
-async function readStoredMaps() {
-  try {
-    const raw = await fs.readFile(DATA_FILE, 'utf8');
-    const parsed = JSON.parse(raw);
-    if (Array.isArray(parsed)) return parsed;
-    return [];
-  } catch (err) {
-    return [];
-  }
-}
+import clientPromise from '@/lib/mongodb';
 
 // GET /reference-maps/[id]/view
 // Renders a simple HTML viewer page on your domain that embeds the stored URL (Cloudinary or otherwise).
@@ -27,8 +13,10 @@ export async function GET(request) {
     return NextResponse.json({ error: 'Missing id' }, { status: 400 });
   }
 
-  const all = await readStoredMaps();
-  const item = all.find(entry => entry.id === id);
+  const client = await clientPromise;
+  const db = client.db('geology_db');
+  const collection = db.collection('reference_maps');
+  const item = await collection.findOne({ id });
 
   if (!item) {
     return NextResponse.json({ error: 'Map not found' }, { status: 404 });

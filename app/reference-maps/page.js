@@ -254,7 +254,7 @@ export default function ReferenceMapsLibraryPage() {
             <div className="rounded-xl border border-white/15 bg-[#101b18] p-4 sm:p-5">
               <h2 className="text-sm font-semibold text-slate-100 mb-2">Add a Reference Map</h2>
               <p className="text-xs text-slate-400 mb-4">
-                Upload a new map or resource file. The file will be stored in Cloudinary and listed below for visitors.
+                Upload a new map or resource file. 
               </p>
 
               <form onSubmit={handleUpload} className="space-y-3">
